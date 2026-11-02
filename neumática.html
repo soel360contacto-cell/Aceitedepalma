@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPH - Soluciones para Aceite de Palma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="Inicio/Favicon-aceite-de-palma-l.png" href="/Favicon-aceite-de-palma-l.png">
+
+      <nav class="absolute top-0 left-0 w-full z-50 font-['Montserrat',_sans-serif]">
+        <div class="max-w-7xl mx-auto px-6 py-4 md:py-6 flex justify-between items-center relative">
+            
+            <div class="flex items-center">
+                <a href="index.html#inicio">
+                    <img src="inicio/fph-logo-blanco.png" alt="Logo FPH" class="h-16 md:h-24 object-contain brightness-0 invert md:brightness-100 md:invert-0">
+                </a>
+            </div>
+            
+            <div class="hidden md:flex flex-1 justify-center items-center gap-10 text-white text-sm md:text-base font-semibold tracking-wide">
+                <a href="index.html#inicio" class="hover:text-[#25d366] transition-colors drop-shadow-md">INICIO</a>
+                <a href="index.html#nosotros" class="hover:text-[#25d366] transition-colors drop-shadow-md no-underline">NOSOTROS</a>
+                
+                <div class="relative group h-full flex items-center">
+                    <a href="Potencia.html" class="flex items-center gap-1.5 text-[#25d366] drop-shadow-md py-4 cursor-pointer">
+                        PRODUCTOS <i class="fas fa-chevron-down text-[10px] opacity-70 group-hover:opacity-100 transition-opacity"></i>
+                    </a>
+                </div>
+                
+                <a href="index.html#mro" class="hover:text-[#25d366] transition-colors drop-shadow-md">MRO</a>
+                <a href="index.html#contacto" class="hover:text-[#25d366] transition-colors drop-shadow-md">CONTACTO</a>
+            </div>
+
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-white text-3xl focus:outline-none drop-shadow-md">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- MENU MÓVIL DESPLEGABLE (Oculto por defecto) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0a192f] absolute top-full left-0 w-full shadow-lg border-t border-white/10">
+            <div class="flex flex-col text-white text-sm font-semibold tracking-wide p-6 gap-6">
+                <!-- Igual aquí para celular, tienen "index.html" -->
+                <a href="index.html#inicio" class="mobile-link hover:text-[#ffc107] transition-colors">INICIO</a>
+                <a href="index.html#nosotros" class="mobile-link hover:text-[#ffc107] transition-colors">NOSOTROS</a>
+                <a href="Potencia.html" class="mobile-link text-[#ffc107] transition-colors">PRODUCTOS</a>
+                <a href="index.html#mro" class="mobile-link hover:text-[#ffc107] transition-colors">MRO</a>
+                <a href="index.html#contacto" class="mobile-link hover:text-[#ffc107] transition-colors">CONTACTO</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+   <!-- SECCIÓN PRINCIPAL (HERO) CON VIDEO LOCAL Y CORTE EN "V" -->
+    <section id="inicio" class="relative z-20 font-['Montserrat',_sans-serif] flex flex-col w-full h-[80vh] md:h-[100vh] overflow-hidden" style="clip-path: polygon(0 0, 100% 0, 100% 92%, 50% 100%, 0 92%);">        
+        <!-- Fondo de Video -->
+        <div class="absolute inset-0 w-full h-full z-0 overflow-hidden pointer-events-none bg-[#0a192f]">
+            <video autoplay loop muted playsinline class="absolute top-1/2 left-1/2 w-full h-full object-cover -translate-x-1/2 -translate-y-1/2">
+            <source src="Productos/Automatización-control/Neumatica/Neumatica.mp4" type="video/mp4">
+        </video>
+
+    </div>
+    
+    <!-- Filtro oscuro reforzado para que las letras blancas resalten perfecto sobre el video -->
+    <div class="absolute inset-0 bg-[#0a192f]/60 z-10"></div>
+
+    <!-- Contenido Centrado (Títulos) -->
+    <div class="relative z-20 w-full h-full max-w-5xl mx-auto px-6 flex flex-col items-center justify-center text-center pt-10">
+        
+        <!-- Título Principal -->
+        <h1 class="text-white text-4xl md:text-6xl font-bold uppercase leading-tight drop-shadow-xl tracking-wide mb-4">
+         Neumática 
+        </h1>
+    </div>
+   </section>
+ 
+    <!-- ==========================================
+     SECCIÓN: NEUMÁTICA (Sin Acordeón)
+     ========================================== -->
+ <section id="neumatica" class="py-16 px-6 bg-white font-['Open_Sans',_sans-serif]">
+    <div class="max-w-7xl mx-auto">
+
+        <!-- BANNER AZUL -->
+        <div class="w-full bg-[#004b93] py-4 md:py-5 px-4 mb-10 shadow-md rounded-sm">
+            <h2 class="text-white text-center text-base md:text-lg lg:text-xl font-bold uppercase tracking-wider drop-shadow-sm">
+                Soluciones eficientes y precisas para el control de aire comprimido
+            </h2>
+        </div>
+
+        <!-- Enlace "Ver todos >" -->
+        <div class="w-full flex justify-end mb-6">
+            <a href="Potencia.html" class="text-blue-600 text-lg md:text-xl font-bold flex items-center gap-2 hover:text-[#004b93] transition-colors cursor-pointer">
+                Ver todos <i class="fas fa-chevron-right text-base mt-1"></i>
+            </a>
+        </div>
+
+        <!-- CUADRÍCULA DE PRODUCTOS -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Tarjeta 1: Simultaneador -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Neumatica/hidroneumático.png" alt="Simultaneador para Sistema Hidroneumático" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Simultaneador para Sistema Hidroneumático</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Control alternado para bombas en sistemas de presión.
+                        <span class="more-text hidden">
+                            <br><br>Optimiza el desgaste de las bombas al alternar su funcionamiento de manera automática. Asegura una presión constante en la red y previene el paro total del suministro en caso de que uno de los equipos requiera mantenimiento.
+                        </span>
+                    </div>
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: Acumulador -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Neumatica/Acumulador de aire comprimido.png" alt="Acumulador de aire comprimido" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Acumulador de aire comprimido</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Almacenamiento seguro para estabilizar la presión de la red.
+                        <span class="more-text hidden">
+                            <br><br>Absorbe las fluctuaciones de consumo y reduce los ciclos continuos de carga/descarga del compresor. Fabricados con acero de alta resistencia y certificados para operar bajo las normas de seguridad industrial más estrictas.
+                        </span>
+                    </div>
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3: Silenciador U -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Neumatica/Silenciador.png" alt="Silenciador U" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Silenciador U</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Reducción efectiva del ruido en escapes de válvulas neumáticas.
+                        <span class="more-text hidden">
+                            <br><br>Su diseño poroso disminuye drásticamente los decibelios generados por la rápida expansión del aire. Protege al personal operativo de la contaminación acústica sin restringir el flujo natural de escape.
+                        </span>
+                    </div>
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4: Silenciador AMTE -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Neumatica/Silenciador AMTE.png" alt="Silenciador AMTE" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Silenciador AMTE</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Silenciador metálico para condiciones de alta temperatura.
+                        <span class="more-text hidden">
+                            <br><br>Construcción robusta en bronce sinterizado que soporta impactos mecánicos y altas temperaturas. Ideal para entornos industriales agresivos donde los silenciadores plásticos tradicionales podrían degradarse rápidamente.
+                        </span>
+                    </div>
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 5: Silenciador UOM -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Neumatica/Silenciador UOM, UOMS.png" alt="Silenciador UOM, UOMS" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Silenciador UOM, UOMS</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Silenciadores compactos de alto rendimiento y bajo mantenimiento.
+                        <span class="more-text hidden">
+                            <br><br>Combinan una excelente atenuación del ruido con una baja resistencia al flujo. Adicionalmente, previenen la entrada de polvo y contaminantes ambientales al sistema neumático durante la fase de despresurización.
+                        </span>
+                    </div>
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 6: Indicador de presión -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Neumatica/Indicador de presión OH.png" alt="Indicador de presión OH" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Indicador de presión OH</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Monitoreo visual instantáneo del estado de la red neumática.
+                        <span class="more-text hidden">
+                            <br><br>Proporciona una lectura clara y precisa de la presión de operación directamente en el equipo. Su instalación es sencilla y resulta vital para el mantenimiento preventivo y la detección rápida de fugas o caídas de presión.
+                        </span>
+                    </div>
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 7: Cilindro normalizado -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Neumatica/Cilindro normalizado.png" alt="Cilindro normalizado" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Cilindro normalizado</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Actuadores lineales robustos que cumplen con estándares internacionales (ISO/VDMA).
+                        <span class="more-text hidden">
+                            <br><br>Garantizan una intercambiabilidad perfecta y un rendimiento confiable en tareas de empuje, tracción y elevación. Fabricados para soportar ciclos de trabajo continuo en líneas de automatización industrial pesada.
+                        </span>
+                    </div>
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 8: Cilindros Compactos -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Neumatica/Cilindros Compactos y Miniatura.png" alt="Cilindros Compactos y Miniatura" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Cilindros Compactos y Miniatura</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Fuerza neumática eficiente en espacios extremadamente reducidos.
+                        <span class="more-text hidden">
+                            <br><br>Diseñados específicamente para aplicaciones donde el espacio de montaje es crítico. Ofrecen una excelente relación tamaño-potencia, siendo la opción ideal para maquinaria de ensamblaje ligero, sistemas de embalaje y robótica.
+                        </span>
+                    </div>
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 9: Cilindros sin vástago -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Neumatica/Cilindros sin vástago y Actuadores Giratorios.png" alt="Cilindros sin vástago y Actuadores Giratorios" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Cilindros sin vástago y Actuadores Giratorios</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Movimiento lineal extendido y rotación controlada sin ocupar espacio extra.
+                        <span class="more-text hidden">
+                            <br><br>Los cilindros sin vástago permiten realizar carreras muy largas en espacios limitados, mientras que los actuadores giratorios transforman la energía neumática en torque rotativo preciso. Indispensables en sistemas de transferencia de piezas.
+                        </span>
+                    </div>
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 10: Pinzas Neumáticas -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Neumatica/Pinzas Neumáticas (Grippers).png" alt="Pinzas Neumáticas" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Pinzas Neumáticas (Grippers)</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Sujeción segura y precisa para aplicaciones automáticas de pick-and-place.
+                        <span class="more-text hidden">
+                            <br><br>Actúan como las "manos" de los sistemas automatizados. Ofrecen una fuerza de agarre constante y repetibilidad excepcional, permitiendo manipular y trasladar desde piezas pesadas hasta componentes electrónicos muy delicados sin dañarlos.
+                        </span>
+                    </div>
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 11: Electroválvulas -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Neumatica/Electroválvulas Direccionales.png" alt="Electroválvulas Direccionales" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Electroválvulas Direccionales</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Control electrónico rápido del flujo y la dirección del aire comprimido.
+                        <span class="more-text hidden">
+                            <br><br>Son el cerebro operativo del circuito neumático. Permiten accionar cilindros y actuadores con tiempos de respuesta de milisegundos, integrándose perfectamente con controladores lógicos (PLC) para una automatización de alta velocidad.
+                        </span>
+                    </div>
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 12: Manifolds -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Neumatica/Islas de Válvulas (Manifolds).png" alt="Islas de Válvulas (Manifolds)" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Islas de Válvulas (Manifolds)</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Centralización eficiente y ultracompacta del control neumático.
+                        <span class="more-text hidden">
+                            <br><br>Agrupan múltiples electroválvulas en un solo bloque alimentado, reduciendo drásticamente el cableado y las conexiones de mangueras individuales. Facilitan el diagnóstico de fallas y optimizan enormemente el espacio dentro de los gabinetes de control.
+                        </span>
+                    </div>
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 13: Purgas Automáticas -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Neumatica/Purgas Automáticas (Trampas de agua).png" alt="Purgas Automáticas (Trampas de agua)" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Purgas Automáticas (Trampas de agua)</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Eliminación automática de condensados dañinos en la red de aire.
+                        <span class="more-text hidden">
+                            <br><br>Drenan el agua y los aceites acumulados en los depósitos, pulmones y filtros sin requerir intervención manual del operador. Protegen las válvulas y cilindros contra la corrosión interna prematura, garantizando aire limpio y seco al final de la línea.
+                        </span>
+                    </div>
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 14: Sensores Magnéticos -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Neumatica/Sensores magneticos.png" alt="Sensores Magnéticos" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Sensores Magnéticos</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Detección precisa y en tiempo real de la posición del pistón.
+                        <span class="more-text hidden">
+                            <br><br>Se montan directamente en el cuerpo o ranuras del cilindro para enviar señales eléctricas al controlador cuando el actuador alcanza una posición específica. Su tecnología de estado sólido garantiza millones de ciclos de lectura continua sin sufrir desgaste mecánico.
+                        </span>
+                    </div>
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 15: Llamado a la acción (Contacto) -->
+            <a href="index.html#contacto" class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-center border border-gray-200 rounded-xl h-full cursor-pointer group block">
+                <img src="inicio/engranaje.png" alt="Solicita tu pieza" class="w-full h-32 md:h-40 object-contain mb-6 group-hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-center justify-center">
+                    <h3 class="text-[#2563eb] text-xl md:text-2xl font-bold mb-3 uppercase group-hover:text-[#004b93] transition-colors">¿Buscas otro componente neumático?</h3>
+                    <p class="text-gray-700 text-base font-medium leading-relaxed">
+                        Solicita tu pieza y te respondemos de inmediato. Contamos con refacciones y asesoría experta.
+                    </p>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- CUADRO CON BORDE AMARILLO INFERIOR -->
+        <div class="mt-10 border-[3px] border-[#ffc107] bg-white p-5 shadow-sm rounded w-full">
+            <p class="text-gray-800 text-sm md:text-base font-medium leading-relaxed text-center">
+                <span class="font-bold text-[#004b93]">Componentes Neumáticos:</span> Optimice el rendimiento de sus sistemas de aire comprimido. Ofrecemos accesorios de alta calidad que reducen el ruido ambiental, estabilizan la presión de la red y mejoran la eficiencia energética, garantizando una operación segura, automatizada y continua en toda su planta.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const readMoreBtns = document.querySelectorAll('.read-more-btn');
+
+        readMoreBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Busca el contenedor de texto oculto asociado a este botón
+                const hiddenText = this.previousElementSibling.querySelector('.more-text');
+                
+                if (hiddenText.classList.contains('hidden')) {
+                    hiddenText.classList.remove('hidden');
+                    this.textContent = 'Ver menos';
+                } else {
+                    hiddenText.classList.add('hidden');
+                    this.textContent = 'Ver más';
+                }
+            });
+        });
+    });
+</script>
+
+    <footer id="footer-contacto" class="relative bg-[#0a192f] font-['Montserrat',_sans-serif] flex overflow-hidden">
+        <div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-end justify-between">
+            <div class="w-full md:flex-1 flex flex-col pt-10 pb-3 pl-4 pr-6 md:pl-8 md:pr-10">
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 text-white text-center items-end mb-5">
+                    <a href="mailto:ventas@fph.com.mx" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform cursor-pointer relative z-20">
+                        <img src="Inicio/mensaje.png" alt="Correo Electrónico" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">ventas@fph.com.mx</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/w4Ze7WfMjPsbA1zM6" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform cursor-pointer relative z-20">
+                        <img src="Inicio/ubicacion.png" alt="Ubicación" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">Oriente 10 #718, Orizaba</p>
+                    </a>
+                    <a href="https://wa.me/522721498040" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/whatsapp (1).png" alt="WhatsApp" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">(272) 149 8040</p>
+                    </a>
+                    <a href="tel:+52(272) 724 4235" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/telefono.png" alt="Teléfono" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">(272) 724 4235</p>    
+                    </a>
+                    <a href="https://www.fph.com.mx" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/Sitio web.png" alt="Sitio Web" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">www.fph.com.mx</p>
+                    </a>
+                </div>
+                <div class="w-full h-1 md:h-1.5 bg-white mb-2"></div>
+                <p class="text-white text-xs md:text-sm font-bold tracking-wide">FPH S.A. DE C.V.</p>
+            </div>
+            <div class="w-40 md:w-56 shrink-0 flex items-end justify-center">
+                <a href="#inicio" title="Volver al Inicio" class="relative z-20">
+                    <img src="Inicio/fph-logo-blanco.png" alt="Logo FPH" class="w-full h-auto object-cover drop-shadow-2xl hover:brightness-110 transition-all">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Script para que funcione el Menú Móvil -->
+    <script>
+        const btnMenu = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        if (btnMenu && menu) {
+            btnMenu.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>

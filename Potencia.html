@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPH - Soluciones para Aceite de Palma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <nav class="absolute top-0 left-0 w-full z-50 font-['Montserrat',_sans-serif]">
+    <div class="max-w-7xl mx-auto px-6 py-4 md:py-6 flex justify-between items-center relative">
+        <link rel="icon" type="Inicio/Favicon-aceite-de-palma-l.png" href="/Favicon-aceite-de-palma-l.png">
+
+        
+        <!-- LOGO (Sin filtros para que conserve sus colores originales) -->
+        <div class="flex items-center">
+            <a href="index.html#inicio">
+                <!-- Asegúrate de poner el nombre de tu logo A COLOR aquí -->
+                <img src="Inicio/fph-logo-blanco.png" alt="Logo FPH" class="w-28 sm:w-36 md:w-44 h-auto object-contain">
+            </a>
+        </div>
+        
+        <!-- CENTRO: Enlaces de Navegación (Desktop) -->
+        <div class="hidden md:flex flex-1 justify-center items-center gap-10 text-white text-sm md:text-base font-semibold tracking-wide">
+            <a href="index.html#inicio" class="hover:text-[#25d366] transition-colors drop-shadow-md">INICIO</a>
+            <a href="index.html#nosotros" class="hover:text-[#25d366] transition-colors drop-shadow-md no-underline">NOSOTROS</a>
+            
+           <div class="relative group h-full flex items-center">
+                    <a href="Potencia.html" class="flex items-center gap-1.5 hover:text-[#25d366] transition-colors drop-shadow-md py-4 cursor-pointer">
+                        PRODUCTOS <i class="fas fa-chevron-down text-[10px] opacity-70 group-hover:opacity-100 transition-opacity"></i>
+                    </a>
+                </div>
+            
+            <a href="index.html#mro" class="hover:text-[#25d366] transition-colors drop-shadow-md">MRO</a>
+            <a href="index.html#contacto" class="hover:text-[#25d366] transition-colors drop-shadow-md">CONTACTO</a>
+        </div>
+
+        <!-- LADO DERECHO: Botón Menú Móvil -->
+        <div class="md:hidden flex items-center">
+            <button id="mobile-menu-btn" class="text-white text-3xl focus:outline-none drop-shadow-md">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- MENU MÓVIL DESPLEGABLE -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0a192f] absolute top-full left-0 w-full shadow-lg border-t border-white/10">
+        <div class="flex flex-col text-white text-sm font-semibold tracking-wide p-6 gap-6">
+            <a href="index.html#inicio" class="mobile-link hover:text-[#25d366] transition-colors">INICIO</a>
+            <a href="index.html#nosotros" class="mobile-link hover:text-[#25d366] transition-colors">NOSOTROS</a>
+            <a href="Potencia.html" class="mobile-link text-[#25d366] transition-colors">PRODUCTOS</a>
+            <a href="index.html#mro" class="mobile-link hover:text-[#25d366] transition-colors">MRO</a>
+            <a href="index.html#contacto" class="mobile-link hover:text-[#25d366] transition-colors">CONTACTO</a>
+        </div>
+    </div>
+</nav>
+   
+<!-- ==========================================
+         SECCIÓN PRINCIPAL (HERO)
+========================================== -->
+<section id="inicio" class="relative z-20 font-['Montserrat',_sans-serif] flex flex-col w-full h-[80vh] md:h-[100vh] overflow-hidden" style="clip-path: polygon(0 0, 100% 0, 100% 92%, 50% 100%, 0 92%);">        
+        <!-- Fondo de Video -->
+        <div class="absolute inset-0 w-full h-full z-0 overflow-hidden pointer-events-none bg-[#0a192f]">
+            <video autoplay loop muted playsinline class="absolute top-1/2 left-1/2 w-full h-full object-cover -translate-x-1/2 -translate-y-1/2">s
+            <source src="Productos/Transmisión de potencia/Transmicion de potencia.mp4" type="video/mp4">
+        </video>
+
+    </div>
+    
+    <div class="absolute inset-0 bg-[#0a192f]/60 z-10"></div>
+    <div class="relative z-20 w-full h-full max-w-5xl mx-auto px-6 flex flex-col items-center justify-center text-center pt-10">
+        
+    <h1 class="text-white text-4xl md:text-6xl font-bold uppercase leading-tight drop-shadow-xl tracking-wide mb-4">
+           
+        </h1>
+    </div>
+   
+</section>
+
+  <section id="categorias-productos" class="py-20 bg-white font-['Montserrat',_sans-serif]">
+        <!-- Contenedor ancho -->
+        <div class="max-w-[90rem] mx-auto px-6 md:px-10">
+            
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-[#004b93] uppercase tracking-wide">
+                    Nuestros Productos
+                </h2>
+                <div class="w-100 h-2 bg-[#2563eb] mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 lg:gap-10">
+                
+                <div class="border-2 border-[#5a9bd4]/60 rounded-[2rem] bg-white flex flex-col overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                    
+                    <div class="h-28 flex items-center justify-center text-center bg-gray-50 border-b-2 border-gray-200">
+                        <h3 class="text-[#004b93] font-extrabold text-xl px-4 uppercase leading-tight">Transmisión de potencia</h3>
+                    </div>
+                    
+                    <div class="flex flex-col px-4 pb-8 pt-4 gap-2">
+                        
+                        <a href="Motores.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Transmisión de potencia/Motores/Motor Síncrono.webp" alt="Motores" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Motores</span>
+                        </a>
+                        
+                        <a href="Reductores.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Transmisión de potencia/Reductores/Inicio_reductor.png" alt="Reductores" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Reductores</span>
+                        </a>
+                        
+                        <a href="Cadenas.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Transmisión de potencia/cadenas/cadenas-inicio.avif" alt="Cadenas" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Cadenas</span>
+                        </a>
+
+                        <a href="sprokets.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Transmisión de potencia/Sprockets/Sprockets para cadena de ingenieria.png" alt="Sprockets" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Sprockets y Piñones</span>
+                        </a>
+
+                        <a href="Poleas.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Transmisión de potencia/poleas/Poleas de ala.png" alt="Poleas" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Poleas y bandas</span>
+                        </a>
+
+                        <a href="Engranes y bujes.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Transmisión de potencia/Engranes y bujes/Engranes Cónicos Rel 1.png" alt="Poleas" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Engranes y bujes</span>
+                        </a>
+
+                        <a href="Coples.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Transmisión de potencia/acoplamientos/Coples Go-Flex®.png" alt="Coples" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Coples y Juntas</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ==========================================
+                     COLUMNA 2: BOMBEO DE AGUA
+                     ========================================== -->
+                <div class="border-2 border-[#5a9bd4]/60 rounded-[2rem] bg-white flex flex-col overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                    
+                    <div class="h-28 flex items-center justify-center text-center bg-gray-50 border-b-2 border-gray-200">
+                        <h3 class="text-[#004b93] font-extrabold text-xl px-4 uppercase leading-tight">Bombeo de agua</h3>
+                    </div>
+                    
+                    <div class="flex flex-col px-4 pb-8 pt-4 gap-2">
+                        
+                        <a href="Bombas-superficie.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Bombas/Bombas de superficie/Wilo-VeroLine-IP-Z.png" alt="Bombas" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Bombas de superficie</span>
+                        </a>
+                        
+                        <a href="Motobombas-aguas-residuales.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Bombas/Motobombas aguas residuales/Motobombas trituradoras .png" alt="Motobombas" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Motobombas para aguas residuales</span>
+                        </a>
+
+                        <a href="Equipos-sumergibles.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Bombas/Equipos sumergibles/Bombas sumergibles Barnes para aguas negras SE.png" alt="Sumergibles" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Equipos Sumergibles</span>
+                        </a>
+
+                        <a href="Bombas-centrifugas.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Bombas/Bombas centrífugas/Centrifugas Berkeley Serie BSD.png" alt="Centrífugas" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Bombas Centrífugas</span>
+                        </a>
+
+                        <a href="Equipos Presurizadores.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Bombas/Equipos Presurizadores/Presión constante triplex.png" alt="Presurizadores" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Equipos Presurizadores</span>
+                        </a>
+
+                        <a href="Tanques-precargados.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Bombas/Tanques precargados/Membrana PRO XH25.png" alt="Tanques" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Tanques precargados</span>
+                        </a>
+
+                        <a href="Equipos y accesorios.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Bombas/Equipos y Accesorios/Soplador para hidromasaje y SPA.png" alt="Accesorios" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight"> Pisina y spa</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ==========================================
+                     COLUMNA 3: AUTOMATIZACIÓN Y CONTROL
+                     ========================================== -->
+                <div class="border-2 border-[#5a9bd4]/60 rounded-[2rem] bg-white flex flex-col overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                    
+                    <div class="h-28 flex items-center justify-center text-center bg-gray-50 border-b-2 border-gray-200">
+                        <h3 class="text-[#004b93] font-extrabold text-xl px-4 uppercase leading-tight">Automatización y control</h3>
+                    </div>
+                    
+                    <div class="flex flex-col px-4 pb-8 pt-4 gap-2">
+
+                        <a href="Motion-control.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Transmisión de potencia/Motion control/Fine Cyclo® Serie A Tipo F3C.webp" alt="Motion Control" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Motion Control Drives</span>
+                        </a>
+                        
+                        <a href="variadores.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Automatización-control/Variadores/1-1.png" alt="Variadores" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Variadores</span>
+                        </a>
+                        
+                        <a href="Relevadores.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Automatización-control/Relevador/plug-in-relay.png" alt="Relevadores" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Relevadores</span>
+                        </a>
+                        
+                        <a href="Arrancadores.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Automatización-control/Arrancador/Arracandor suave.png" alt="Arrancadores" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Arrancadores</span>
+                        </a>
+
+                        <a href="controladores.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Automatización-control/Controladores PLC y PAC/Preventa XPS MC.png" alt="Controladores" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Controladores PLC y PAC</span>
+                        </a>
+
+                        <a href="neumática.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Automatización-control/Neumatica/Acumulador de aire comprimido.png" alt="Neumática" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Neumática</span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- ==========================================
+                     COLUMNA 4: HERRAMIENTAS
+                     ========================================== -->
+                <div class="border-2 border-[#5a9bd4]/60 rounded-[2rem] bg-white flex flex-col overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                    
+                    <div class="h-28 flex items-center justify-center text-center bg-gray-50 border-b-2 border-gray-200">
+                        <h3 class="text-[#004b93] font-extrabold text-xl px-4 uppercase leading-tight">Herramientas</h3>
+                    </div>
+                    
+                    <div class="flex flex-col px-4 pb-8 pt-4 gap-2">
+
+                           <a href="Herramientas-hidraulicas.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Automatización-control/hidraulica/Inyector de aceite.png" alt="Hidráulicas" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Herramientas Hidráulicas</span>
+                        </a>
+                        
+                        <a href="Herramientas de mano.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Herramientas/Herramientas manual/DeWalt® Juego de Herramientas.png" alt="Manual" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Herramienta de mano </span>
+                        </a>
+                        
+                        <a href="Herramienta-neumatica.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Herramientas/Herramienta Neumática/Esmeril de troquel (Mototool neumático).png" alt="Especializada" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Herramienta Neumática</span>
+                        </a>
+
+                        <a href="Herramienta-Eléctrica.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Herramientas/Herramienta-Eléctronica/canaleta.png" alt="Corte" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Herramienta Eléctrica</span>
+                        </a>
+
+                        <a href="Herramienta-medición-presición.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Herramientas/Herramienta-medición-presición/Manómetros y vacuómetros.png" alt="Eléctrica" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Herramienta de Medicion y presición</span>
+                        </a>
+                         
+                        <a href="Engrasado- lubricación.html" class="flex items-center gap-4 py-3 hover:bg-gray-50 group transition-colors rounded-xl px-2">
+                            <img src="Productos/Herramientas/Engrasado y lubricación/Aceite hidraulico.png" alt="Corte" class="w-16 h-16 lg:w-20 lg:h-20 object-contain shrink-0 group-hover:scale-110 transition-transform drop-shadow-md">
+                            <span class="text-gray-700 text-sm lg:text-base font-bold group-hover:text-[#2563eb] transition-colors leading-tight">Engrasado y Lubricación</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Botón Inferior -->
+            <div class="mt-20 flex justify-center">
+                <a href="index.html#contacto" class="bg-[#004b93] hover:bg-[#087A4A] text-white font-extrabold text-lg md:text-xl uppercase px-12 py-4 shadow-xl hover:shadow-2xl transition-all text-center leading-tight rounded-sm tracking-wide">
+                    Contáctanos
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <footer id="footer-contacto" class="relative bg-[#0a192f] font-['Montserrat',_sans-serif] flex overflow-hidden">
+        <div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-end justify-between">
+            <div class="w-full md:flex-1 flex flex-col pt-10 pb-3 pl-4 pr-6 md:pl-8 md:pr-10">
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 text-white text-center items-end mb-5">
+                    <a href="mailto:ventas@fph.com.mx" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform cursor-pointer relative z-20">
+                        <img src="Inicio/mensaje.png" alt="Correo Electrónico" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">ventas@fph.com.mx</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/w4Ze7WfMjPsbA1zM6" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform cursor-pointer relative z-20">
+                        <img src="Inicio/ubicacion.png" alt="Ubicación" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">Oriente 10 #718, Orizaba</p>
+                    </a>
+                    <a href="https://wa.me/522721498040" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/whatsapp (1).png" alt="WhatsApp" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">(272) 149 8040</p>
+                    </a>
+                    <a href="tel:+52(272) 724 4235" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/telefono.png" alt="Teléfono" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">(272) 724 4235</p>    
+                    </a>
+                    <a href="https://www.fph.com.mx" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/Sitio web.png" alt="Sitio Web" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">www.fph.com.mx</p>
+                    </a>
+                </div>
+                <div class="w-full h-1 md:h-1.5 bg-white mb-2"></div>
+                <p class="text-white text-xs md:text-sm font-bold tracking-wide">FPH S.A. DE C.V.</p>
+            </div>
+            <div class="w-40 md:w-56 shrink-0 flex items-end justify-center">
+                <a href="#inicio" title="Volver al Inicio" class="relative z-20">
+                    <img src="Inicio/fph-logo-blanco.png" alt="Logo FPH" class="w-full h-auto object-cover drop-shadow-2xl hover:brightness-110 transition-all">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Script para que funcione el Menú Móvil -->
+<script>
+    const btnMenu = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    if (btnMenu && menu) {
+        btnMenu.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    }
+</script>

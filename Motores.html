@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPH - Soluciones para Aceite de Palma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="Inicio/Favicon-aceite-de-palma-l.png" href="/Favicon-aceite-de-palma-l.png">
+
+</head>
+<nav class="absolute top-0 left-0 w-full z-50 font-['Montserrat',_sans-serif]">
+    <div class="max-w-7xl mx-auto px-6 py-4 md:py-6 flex justify-between items-center relative">
+        
+        <!-- LOGO (Sin filtros para que conserve sus colores originales) -->
+        <div class="flex items-center">
+            <a href="index.html#inicio">
+                <!-- Asegúrate de poner el nombre de tu logo A COLOR aquí -->
+                <img src="Inicio/fph-logo-blanco.png" alt="Logo FPH" class="w-28 sm:w-36 md:w-44 h-auto object-contain">
+            </a>
+        </div>
+        
+        <!-- CENTRO: Enlaces de Navegación (Desktop) -->
+        <div class="hidden md:flex flex-1 justify-center items-center gap-10 text-white text-sm md:text-base font-semibold tracking-wide">
+            <a href="index.html#inicio" class="hover:text-[#25d366] transition-colors drop-shadow-md">INICIO</a>
+            <a href="index.html#nosotros" class="hover:text-[#25d366] transition-colors drop-shadow-md no-underline">NOSOTROS</a>
+            
+            <div class="relative group h-full flex items-center">
+                <a href="Potencia.html" class="flex items-center gap-1.5 text-[#25d366] drop-shadow-md py-4 cursor-pointer">
+                    PRODUCTOS <i class="fas fa-chevron-down text-[10px] opacity-70 group-hover:opacity-100 transition-opacity"></i>
+                </a>
+            </div>
+            
+            <a href="index.html#mro" class="hover:text-[#25d366] transition-colors drop-shadow-md">MRO</a>
+            <a href="index.html#contacto" class="hover:text-[#25d366] transition-colors drop-shadow-md">CONTACTO</a>
+        </div>
+
+        <!-- LADO DERECHO: Botón Menú Móvil -->
+        <div class="md:hidden flex items-center">
+            <button id="mobile-menu-btn" class="text-white text-3xl focus:outline-none drop-shadow-md">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- MENU MÓVIL DESPLEGABLE -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0a192f] absolute top-full left-0 w-full shadow-lg border-t border-white/10">
+        <div class="flex flex-col text-white text-sm font-semibold tracking-wide p-6 gap-6">
+            <a href="index.html#inicio" class="mobile-link hover:text-[#25d366] transition-colors">INICIO</a>
+            <a href="index.html#nosotros" class="mobile-link hover:text-[#25d366] transition-colors">NOSOTROS</a>
+            <a href="Potencia.html" class="mobile-link text-[#25d366] transition-colors">PRODUCTOS</a>
+            <a href="index.html#mro" class="mobile-link hover:text-[#25d366] transition-colors">MRO</a>
+            <a href="index.html#contacto" class="mobile-link hover:text-[#25d366] transition-colors">CONTACTO</a>
+        </div>
+    </div>
+</nav>
+       
+    <!-- ==========================================
+         HERO SECTION (VIDEO)
+         ========================================== -->
+    <section id="inicio" class="relative z-20 font-['Montserrat',_sans-serif] flex flex-col w-full h-[80vh] md:h-[100vh] overflow-hidden" style="clip-path: polygon(0 0, 100% 0, 100% 92%, 50% 100%, 0 92%);">        
+        <!-- Fondo de Video -->
+        <div class="absolute inset-0 w-full h-full z-0 overflow-hidden pointer-events-none bg-[#0a192f]">
+            <video autoplay loop muted playsinline class="absolute top-1/2 left-1/2 w-full h-full object-cover -translate-x-1/2 -translate-y-1/2">
+                <source src="Productos/Transmisión de potencia/Motorreductores.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="absolute inset-0 bg-[#0a192f]/60 z-10"></div>
+        <div class="relative z-20 w-full h-full max-w-5xl mx-auto px-6 flex flex-col items-center justify-center text-center pt-10">
+            <h1 class="text-white text-4xl md:text-6xl font-bold uppercase leading-tight drop-shadow-xl tracking-wide mb-4">
+               Motores 
+            </h1>
+        </div>
+    </section>
+      <!-- ==========================================
+     SECCIÓN: PIÑONES (Sin Acordeón)
+     ========================================== -->
+<section id="pinones" class="py-16 px-6 bg-white font-['Open_Sans',_sans-serif]">
+    <div class="max-w-7xl mx-auto">
+        <!-- BANNER AZUL -->
+        <div class="w-full bg-[#004b93] py-4 md:py-5 px-4 mb-10 shadow-md rounded-sm">
+            <h2 class="text-white text-center text-base md:text-lg lg:text-xl font-bold uppercase tracking-wider drop-shadow-sm">
+                "Eficiencia en cada giro"
+            </h2>
+        </div>
+
+        <!-- Enlace "Ver todos >" -->
+        <div class="w-full flex justify-end mb-6">
+            <a href="Potencia.html" class="text-blue-600 text-lg md:text-xl font-bold flex items-center gap-2 hover:text-[#004b93] transition-colors cursor-pointer">
+                Ver todos <i class="fas fa-chevron-right text-base mt-1"></i>
+            </a>
+        </div>
+
+        <!-- CUADRÍCULA DE PRODUCTOS (3 por fila: lg:grid-cols-3) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Tarjeta 1: Piñones ANSI -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motores/W22.png" alt="Piñones ANSI" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">W22</h3>                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Indicado para las diversas aplicaciones industriales. 
+                        <!-- Texto oculto -->
+                        <span class="more-text hidden">
+                            <br><br>El proyecto del sistema de ventilación de la línea W22 proporciona menores niveles de ruido y permite una mejor distribución del flujo de aire sobre el motor, minimizando los puntos calientes en la superficie y aumentando su confiabilidad y longevidad.
+                            El aumento del volumen interno de la caja de conexión facilita el acceso a los terminales de conexión, garantizando mayor facilidad y seguridad en las conexiones eléctricas durante la instalación y el mantenimiento del motor.
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                                    </div>
+            </div>
+
+            <!-- Tarjeta 2: Piñones Métricos -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motores/W22 Prime.png" alt="Piñones Métricos" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">W22 Prime</h3>                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        El W22 Prime ofrece eficiencia IE4 e IE5 manteniendo la sencillez y fiabilidad de la tecnología de motores de inducción.
+                        <span class="more-text hidden">
+                    <br><br>
+                  <strong>Diferenciadores clave:</strong>
+             <ul class="list-disc pl-4 mt-1 mb-3 space-y-1">
+                <li>Reducción del consumo energético y de los costes operativos</li>
+                 <li>Contribuye a la reducción de las emisiones de CO₂ (Scope 3)</li>
+                  <li>No requiere una arquitectura de sistema compleja</li>
+                    <li>Compatible con instalaciones existentes</li>
+                      <li>Proceso de actualización rápido y sencillo</li>
+                       <li>Adecuado para aplicaciones exigentes</li>
+                        </ul>
+        
+                          </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+
+                  <!-- Tarjeta 3 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motores/Motores de Inducción.png" alt="Piñones Métricos" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Motores de Inducción</h3>                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Motor Asíncrono de Alta Eficiencia NEMA Premium con Brida C
+                        <span class="more-text hidden">
+                    <br><br>
+                  <strong>Diferenciadores clave:</strong>
+             <ul class="list-disc pl-4 mt-1 mb-3 space-y-1">
+                <li>Carcasa de aleación de aluminio 100% reciclable</li>
+                 <li>Ventilador y cubierta de bajo ruido</li>
+                  <li>Rodamientos de bolas blindados y libres de mantenimiento</li>
+                    <li>Certificaciones: Reconocido por UL / Certificado CSA / Cumple con CE</li>
+                      <li>Construcción totalmente cerrada con ventilación externa (TEFC)</li>
+                        </ul>
+        
+                          </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+                   <!-- Tarjeta 4-->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motores/Motor Síncrono.webp" alt="Piñones Métricos" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Motor Síncrono</h3>                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Están diseñados para alcanzar una eficiencia ultra-premium (IE5) manteniendo un formato compacto y duradero.
+                        <span class="more-text hidden">
+                    <br><br>
+                  <strong>Diferenciadores clave:</strong>
+             <ul class="list-disc pl-4 mt-1 mb-3 space-y-1">
+                <li>Combinando lo mejor de los diseños de servomotores sin escobillas y motores de inducción de CA, nuestro motor síncrono ofrece:</li>
+                <li>Protección IP55, construcción Totalmente Cerrada con Ventilación Externa (TEFC)</li>
+                 <li>460V, trifásico, compatible con 50/60 Hz</li>
+                  <li>Rendimiento mantenido por encima del 95% de eficiencia</li>
+                      </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+
+              <!-- Tarjeta 5 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motores/W22 Prime.png" alt="Piñones Métricos" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">W22 Prime</h3>                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        El W22 Prime ofrece eficiencia IE4 e IE5 manteniendo la sencillez y fiabilidad de la tecnología de motores de inducción.
+                        <span class="more-text hidden">
+                    <br><br>
+                  <strong>Diferenciadores clave:</strong>
+             <ul class="list-disc pl-4 mt-1 mb-3 space-y-1">
+                <li>Reducción del consumo energético y de los costes operativos</li>
+                 <li>Contribuye a la reducción de las emisiones de CO₂ (Scope 3)</li>
+                  <li>No requiere una arquitectura de sistema compleja</li>
+                    <li>Compatible con instalaciones existentes</li>
+                      <li>Proceso de actualización rápido y sencillo</li>
+                       <li>Adecuado para aplicaciones exigentes</li>
+                        </ul>
+        
+                          </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+
+            <!-- Tarjeta 6-->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motores/W21 Multimontaje.png" alt="Piñones síncronos" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-justify text-[#2563eb] text-xl font-bold mb-3 uppercase">W21 Multimontaje</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+               El motor W21 Multimontaje posee carcasa de aluminio y patas removibles
+                        <!-- Texto oculto -->
+                        <span class="more-text hidden">
+                            <br><br> Este motor es capaz de suministrar gran flexibilidad y facilidad en el cambio de configuración, sin necesidad de mecanizado o modificaciones adicionales. Su caja de conexión puede ser rotada de 90 en 90 grados, permitiendo la conexión de los cables del motor en cualquier lado. Además de eso, estos motores son totalmente intercambiables con los motores de hierro fundido.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+
+                <!-- Tarjeta 7 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motores/W40.png" alt="Piñones síncronos" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-justify text-[#2563eb] text-xl font-bold mb-3 uppercase">W40</h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+               Motor para aplicación general en ambientes donde la humedad y la suciedad son mínimas.
+                        <!-- Texto oculto -->
+                        <span class="more-text hidden">
+                            <br><br>Marco de hierro fundido, nivel de eficiencia de hasta IE4, marco de 160 a 400. W40 es un motor de tipo abierto (ODP) diseñado para aplicación industrial con el fin de tener una solución compacta y ligera para la aplicación.
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+             <!-- Tarjeta 8 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motores/W21Xd Table B1.png" alt="Piñones Métricos" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">W21Xd Table B1 (MEPS 2001)</h3>                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Baja Tensión - A Prueba de Explosiónes
+                   <span class="more-text hidden">
+                            <br><br>Es un motor a prueba de explosión proyectado especialmente para operar en ambientes con presencia de atmósferas explosivas. Tiene construcción robusta, sistema de retención de llamas con intersticios entre piezas cuidadosamente proyectados, mecanizado de precisión en la caja de conexión y tornillos con alta resistencia mecánica. Satisface las necesidades de áreas clasificadas como Zona 1 y Zona 2.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+                <!-- Tarjeta 9-->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motores/A Prueba de Polvo.png" alt="Piñones síncronos" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-justify text-[#2563eb] text-xl font-bold mb-3 uppercase">A Prueba de Polvo</h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                            Motores de Inducción Trifásicos - Línea W60 (Área Clasificada)
+                          <span class="more-text hidden">
+                            <br><br>Los motores de la línea W60 están dimensionados y diseñados para atender las más diversas aplicaciones en atmósferas explosivas. Con características de seguridad específicas, garantizan la seguridad de la planta donde no se pueden utilizar equipos con características estándar.
+                        </span>
+                      
+                                </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+            <!-- Tarjeta 10 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motores/W21 - Uso General.png" alt="Piñones de rodillos" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-justify text-[#2563eb] text-xl font-bold mb-3 uppercase">W21 - Uso General TEFC Hierro Gris </h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                       Motor IP55 para aplicación general.
+                        <span class="more-text hidden">
+                            <br><br>Disponibles en configuraciones sencillas, dobles o múltiples. Su construcción robusta permite manejar cargas pesadas y de impacto en diversas aplicaciones, desde bandas transportadoras hasta maquinaria agrícola y de minería.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+
+             <!-- Tarjeta 10 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motores/W12.png" alt="Piñones de rodillos" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-justify text-[#2563eb] text-xl font-bold mb-3 uppercase">W12 </h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                             Línea de motores eléctricos de baja tensión 
+                        <span class="more-text hidden">
+                            <br><br>La línea W12 ha sido desarrollada para ofrecer versatilidad y eficiencia. Con bridas, pies, cajas y tapas de cajas de conexión en polímero industrial de alta resistencia y carcasa de aluminio sin mecanizado, el motor tiene el peso más bajo para aplicaciones robustas, lo que le confiere aún más posibilidades.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+                <!-- Tarjeta 11: Llamado a la acción (Contacto) -->
+            <a href="index.html#contacto" class="w-full max-w-sm mx-auto bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full cursor-pointer group block">
+                <img src="Inicio/engranaje.png" alt="Solicita tu pieza" class="w-full h-32 md:h-40 object-contain mb-6 group-hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-center justify-center">
+                    <h3 class="text-[#2563eb] text-xl md:text-2xl font-bold mb-3 uppercase group-hover:text-[#004b93] transition-colors">¿Buscas otro modelo?</h3>
+                    <p class="text-gray-700 text-base font-medium leading-relaxed">
+                        Solicita tu pieza y te respondemos de inmediato.
+                    </p>
+                </div>
+            </a>
+
+        </div> <!-- Cierre del grid de productos -->
+
+        <!-- CUADRO CON BORDE AMARILLO INFERIOR (Motores) -->
+        <div class="mt-10 border-[3px] border-[#ffc107] bg-white p-5 shadow-sm rounded w-full">
+            <p class="text-justify text-gray-800 text-sm md:text-base font-medium leading-relaxed text-center">
+                <span class="font-bold text-[#004b93]">Motores Eléctricos e Industriales:</span> El corazón de su línea de producción. Ofrecemos equipos de alta eficiencia energética diseñados para operar bajo las condiciones más severas, garantizando un rendimiento óptimo, bajo costo de mantenimiento y una confiabilidad absoluta en aplicaciones de trabajo continuo y pesado.
+            </p>
+        </div>
+
+    </div> <!-- Cierre del max-w-7xl -->
+</section> <!-- Cierre de la sección -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const readMoreBtns = document.querySelectorAll('.read-more-btn');
+
+        readMoreBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Busca el contenedor de texto oculto asociado a este botón
+                const hiddenText = this.previousElementSibling.querySelector('.more-text');
+                
+                if (hiddenText.classList.contains('hidden')) {
+                    hiddenText.classList.remove('hidden');
+                    this.textContent = 'Ver menos';
+                } else {
+                    hiddenText.classList.add('hidden');
+                    this.textContent = 'Ver más';
+                }
+            });
+        });
+    });
+</script>
+    <footer id="footer-contacto" class="relative bg-[#0a192f] font-['Montserrat',_sans-serif] flex overflow-hidden">
+        <div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-end justify-between">
+            <div class="w-full md:flex-1 flex flex-col pt-10 pb-3 pl-4 pr-6 md:pl-8 md:pr-10">
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 text-white text-center items-end mb-5">
+                    <a href="mailto:ventas@fph.com.mx" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform cursor-pointer relative z-20">
+                        <img src="Inicio/mensaje.png" alt="Correo Electrónico" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">ventas@fph.com.mx</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/w4Ze7WfMjPsbA1zM6" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform cursor-pointer relative z-20">
+                        <img src="Inicio/ubicacion.png" alt="Ubicación" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">Oriente 10 #718, Orizaba</p>
+                    </a>
+                    <a href="https://wa.me/522721498040" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/whatsapp (1).png" alt="WhatsApp" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">(272) 149 8040</p>
+                    </a>
+                    <a href="tel:+52(272) 724 4235" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/telefono.png" alt="Teléfono" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">(272) 724 4235</p>    
+                    </a>
+                    <a href="https://www.fph.com.mx" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/Sitio web.png" alt="Sitio Web" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">www.fph.com.mx</p>
+                    </a>
+                </div>
+                <div class="w-full h-1 md:h-1.5 bg-white mb-2"></div>
+                <p class="text-white text-xs md:text-sm font-bold tracking-wide">FPH S.A. DE C.V.</p>
+            </div>
+            <div class="w-40 md:w-56 shrink-0 flex items-end justify-center">
+                <a href="#inicio" title="Volver al Inicio" class="relative z-20">
+                    <img src="Inicio/fph-logo-blanco.png" alt="Logo FPH" class="w-full h-auto object-cover drop-shadow-2xl hover:brightness-110 transition-all">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const btnMenu = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        if (btnMenu && menu) {
+            btnMenu.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPH - Soluciones para Aceite de Palma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="Inicio/Favicon-aceite-de-palma-l.png" href="/Favicon-aceite-de-palma-l.png">
+
+ 
+<nav class="absolute top-0 left-0 w-full z-50 font-['Montserrat',_sans-serif]">
+    <div class="max-w-7xl mx-auto px-6 py-4 md:py-6 flex justify-between items-center relative">
+        
+        <div class="flex items-center">
+            <a href="index.html#inicio">
+                <img src="Inicio/fph-logo-blanco.png" alt="Logo FPH" class="w-28 sm:w-36 md:w-44 h-auto object-contain">
+            </a>
+        </div>
+        
+        <div class="hidden md:flex flex-1 justify-center items-center gap-10 text-white text-sm md:text-base font-semibold tracking-wide">
+            <a href="index.html#inicio" class="hover:text-[#25d366] transition-colors drop-shadow-md">INICIO</a>
+            <a href="index.html#nosotros" class="hover:text-[#25d366] transition-colors drop-shadow-md no-underline">NOSOTROS</a>
+            
+            <div class="relative group h-full flex items-center">
+                <a href="Potencia.html" class="flex items-center gap-1.5 text-[#25d366] drop-shadow-md py-4 cursor-pointer">
+                    PRODUCTOS <i class="fas fa-chevron-down text-[10px] opacity-70 group-hover:opacity-100 transition-opacity"></i>
+                </a>
+            </div>
+            
+            <a href="index.html#mro" class="hover:text-[#25d366] transition-colors drop-shadow-md">MRO</a>
+            <a href="index.html#contacto" class="hover:text-[#25d366] transition-colors drop-shadow-md">CONTACTO</a>
+        </div>
+
+        <!-- LADO DERECHO: Botón Menú Móvil -->
+        <div class="md:hidden flex items-center">
+            <button id="mobile-menu-btn" class="text-white text-3xl focus:outline-none drop-shadow-md">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+     <!-- MENU MÓVIL DESPLEGABLE -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0a192f] absolute top-full left-0 w-full shadow-lg border-t border-white/10">
+        <div class="flex flex-col text-white text-sm font-semibold tracking-wide p-6 gap-6">
+            <a href="index.html#inicio" class="mobile-link hover:text-[#25d366] transition-colors">INICIO</a>
+            <a href="index.html#nosotros" class="mobile-link hover:text-[#25d366] transition-colors">NOSOTROS</a>
+            <a href="Potencia.html" class="mobile-link text-[#25d366] transition-colors">PRODUCTOS</a>
+            <a href="index.html#mro" class="mobile-link hover:text-[#25d366] transition-colors">MRO</a>
+            <a href="index.html#contacto" class="mobile-link hover:text-[#25d366] transition-colors">CONTACTO</a>
+        </div>
+    </div>
+</nav>
+
+   <!-- SECCIÓN PRINCIPAL (HERO) CON VIDEO LOCAL Y CORTE EN "V" -->
+<section id="inicio" class="relative z-20 font-['Montserrat',_sans-serif] flex flex-col w-full h-[80vh] md:h-[100vh] overflow-hidden" style="clip-path: polygon(0 0, 100% 0, 100% 92%, 50% 100%, 0 92%);">        
+        <!-- Fondo de Video -->
+        <div class="absolute inset-0 w-full h-full z-0 overflow-hidden pointer-events-none bg-[#0a192f]">
+            <video autoplay loop muted playsinline class="absolute top-1/2 left-1/2 w-full h-full object-cover -translate-x-1/2 -translate-y-1/2">
+        
+            <source src="Productos/Transmisión de potencia/Reductores/reductores.mp4" type="video/mp4">
+        </video>
+
+    </div>
+    
+    <!-- Filtro oscuro reforzado para que las letras blancas resalten perfecto sobre el video -->
+    <div class="absolute inset-0 bg-[#0a192f]/60 z-10"></div>
+
+    <!-- Contenido Centrado (Títulos) -->
+    <div class="relative z-20 w-full h-full max-w-5xl mx-auto px-6 flex flex-col items-center justify-center text-center pt-10">
+        
+        <!-- Título Principal -->
+        <h1 class="text-white text-4xl md:text-6xl font-bold uppercase leading-tight drop-shadow-xl tracking-wide mb-4">
+            Reductores<br>
+        </h1>
+    </div>
+   
+</section>
+<!-- ==========================================
+     SECCIÓN: CATÁLOGO DE PRODUCTOS (FONDO CLARO) 
+     ========================================== -->
+<section id="reductores" class="py-16 px-6 bg-white font-['Open_Sans',_sans-serif]">
+    <div class="max-w-7xl mx-auto">
+
+        <!-- BANNER AZUL DE REFERENCIA -->
+        <div class="w-full bg-[#004b93] py-4 md:py-5 px-4 mb-10 shadow-md rounded-sm">
+            <h2 class="text-white text-center text-base md:text-lg lg:text-xl font-bold uppercase tracking-wider drop-shadow-sm">
+                Encuentre el reductor perfecto para su aplicación
+            </h2>
+        </div>
+
+        <!-- Enlace "Todos >" -->
+        <div class="w-full flex justify-end mb-6">
+            <a href="Potencia.html" class="text-blue-600 text-lg md:text-xl font-bold flex items-center gap-2 hover:text-[#004b93] transition-colors cursor-pointer">
+                Ver todos <i class="fas fa-chevron-right text-base mt-1"></i>
+            </a>
+        </div>
+
+        <!-- Cuadrícula de Productos (3 por fila: lg:grid-cols-3) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Tarjeta 1: Compower -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="Productos/Transmisión de potencia/Reductores/compower_R.webp" alt="Compower" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                
+                <!-- Contenedor de texto alineado a la izquierda -->
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Compower®</h3>
+                    
+                    <div class="text-justifytext-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Reductor planetario, compacto y que ofrece un alto torque.
+                        <!-- Texto oculto que se mostrará al dar click -->
+                          <span class="more-text hidden">
+                    <br><br>
+                  <strong>Diferenciadores clave:</strong>
+                 <ul class="list-disc pl-4 mt-1 mb-3 space-y-1">
+                <li>Direcciones de eje de salida, Horizontal, vertical descendente, vertical ascendente</li>
+                <li>Estilo de montaje Montado de pata (pedestal), brida y eje (opcional)</li>
+               <li>Relaciones de reducción desde de 11:1 a 26,000:1 y superior</li>
+               <li>Rango de reducción	5:1 - 1400:1</li>
+             <li>Torque nominal	460 - 736,000 N⋅m</li>
+        </ul>
+        
+              <strong>Ventajas operativas:</strong>
+            <ul class="list-disc pl-4 mt-1 space-y-1">
+            <li>Múltiples Métodos de Montaje</li>
+            <li>Unidad de Accionamiento</li>
+            <li>Altamente Compacto</li>
+            <li>Alta Resistencia y Rigidez</li>
+        </ul>
+    </span>
+           </div>
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: Cyclo Bevel BuddyBox 4 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="Productos/Transmisión de potencia/Reductores/Cyclo® Bevel BuddyBox® 4.webp" alt="Cyclo Limitador" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-1 uppercase">Cyclo® Bevel BuddyBox® 4</h3>
+                    <span class="block text-[#2563eb] text-xs font-semibold mb-3">(con Limitador de Torque)</span>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Reductores Cónicos Espirales en Ángulo Recto con Entrada Cyclo®.
+                          <span class="more-text hidden">
+                    <br><br>
+                  <strong>Diferenciadores clave:</strong>
+                 <ul class="list-disc pl-4 mt-1 mb-3 space-y-1">
+                <li>Disco de apriete, buje Taper-Grip®, eje sólido, eje hueco con cuñero, transportador de tornillo.</li>
+                <li>6 tamaños de carcasa (A-F), de 105 a 2,329 lbs (48 a 1,059 kg)</li>
+               <li>Relaciones de reducción desde de 11:1 a 26,000:1 y superior</li>
+                 <li>Potencia	de 1/8 a 100 HP (0.10 kW a 75 kW)</li>
+            <li>Torque nominal	Hasta 159,983 lb•in (17,400 N•m).</li>
+
+        </ul>
+        
+              <strong>Ventajas operativas:</strong>
+            <ul class="list-disc pl-4 mt-1 space-y-1">
+            <li>Sistema Unificado de Lubricación</li>
+            <li>Carcasa de Hierro Dúctil</li>
+        </ul>
+    </span>
+     </div>
+                    
+    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3: Altax Neo -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="Productos/Transmisión de potencia/Reductores/Altax® Neo.webp" alt="Altax Neo" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Altax® Neo</h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Motorreductor con dimensiones muy compactas con las bridas más pequeñas.
+                      <span class="more-text hidden">
+                    <br><br>
+                  <strong>Diferenciadores clave:</strong>
+                 <ul class="list-disc pl-4 mt-1 mb-3 space-y-1">
+                <li>Relaciones de reducción desde 3:1 hasta 1,003:1.</li>
+                <li>Capacidad de torque máximo de 6,850 lb·in</li>
+               <li>Disponible en 19 tamaños de carcasa distintos</li>
+        </ul>
+        
+              <strong>Ventajas operativas:</strong>
+            <ul class="list-disc pl-4 mt-1 space-y-1">
+            <li>No hay límites en la dirección de instalación para todos los modelos.</li>
+            <li>Estilo de montaje versátil de brida y de pata (pedestal).</li>
+            <li>Disco cicloidal con perfil liso que garantiza una rotación suave y un funcionamiento silencioso sin ruido de mallado.</li>
+            <li>Mecanismo altamente resistente a la abrasión y fatiga, con necesidad de mantenimiento eliminada.</li>
+        </ul>
+    </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4: Cyclo -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="Productos/Transmisión de potencia/Reductores/cyclo.png" alt="Cyclo®" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Cyclo®</h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                       El reductor con la más alta resistencia y confiabilidad en el mercado.
+                         <span class="more-text hidden">
+                    <br><br>
+                  <strong>Diferenciadores clave:</strong>
+                 <ul class="list-disc pl-4 mt-1 mb-3 space-y-1">
+                <li>Direcciones de eje de salida,Montaje en cualquier dirección (horizontal, vertical descendente, vertical ascendente)</li>
+                <li>Estilo de montaje Patas (pedestal), brida y caja</li>
+            <li>Rango de reducción	2.3:1 a 119:1 (simple), 104:1 a 7569:1 (doble) 8041:1 a 658,503:1 (triple).</li>
+            <li>Torque nominal	de 55 a 603,620 lb•in (6.2 a 68,200 N•m)</li>
+              
+        </ul>
+        
+              <strong>Ventajas operativas:</strong>
+            <ul class="list-disc pl-4 mt-1 space-y-1">
+            
+            <li>Calidad Incomparable</li>
+            <li>Libre de Mantenimiento</li>
+        </ul>
+    </span>
+               </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            
+            <!-- Tarjeta 4: Cyclo -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="Productos/Transmisión de potencia/Reductores/Hansen P4 Multietapa - Vertical.webp" alt="Cyclo®" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Hansen P4 <br>Multietapa Vertical</h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                       El reductor con la más alta resistencia y confiabilidad en el mercado.
+                          <span class="more-text hidden">
+                    <br><br>
+                  <strong>Diferenciadores clave:</strong>
+                 <ul class="list-disc pl-4 mt-1 mb-3 space-y-1">
+                <li>Carcasa vertical específica: disponible en 20 tamaños, con torque de salida de 3 a 1100 kNm.</li>
+                <li>Engranes	Helicoidales y cónicos helicoidales (conforme a AGMA)</li>
+               <li>Relaciones de reducciones 3.55:1 a 630:1 y relación especial a petición</li>
+               <li>Torque de salida nominal	de 3 a 1100 kNm (26,552 a 9.7M lb∙in)</li>
+               <li>Velocidad de entrada	hasta 1800 rpm</li>
+        </ul>
+        
+              <strong>Ventajas operativas:</strong>
+            <ul class="list-disc pl-4 mt-1 space-y-1">
+            <li>Lubricación	Lubricación por bomba</li>
+            <li>Geometría de engranes Hansen P4 potente para niveles de mínimo ruido y vibración.</li>
+            <li>Diseñado para aplicaciones pesadas: torres de enfriamiento, mezcladoras, tostadoras, agitadores y más.</li>
+            <li>Calidad Incomparable</li>
+        </ul>
+    </span>
+                 </div>     
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 4: Cyclo -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="Productos/Transmisión de potencia/Reductores/Paramax® Y (Aceite de Palma).webp" alt="Cyclo®" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Paramax Y Aceite de palma </h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                       Paramax® Y (Aceite de Palma), como solución industrial
+                        <span class="more-text hidden">
+                    <br><br>
+                  <strong>Diferenciadores clave:</strong>
+                     <ul class="list-disc pl-4 mt-1 mb-3 space-y-1">
+                    <li>Montaje	Horizontal y vertical</li>
+                <li>5 tamaños de carcasa</li>
+               <li>Rango de reducción	54:1 a 78:1</li>
+               <li>Rango de potencia	de 15 W a 110 kW</li>
+               <li>Capacidad de torque	hasta 74,000 N•m</li>
+        </ul>
+        
+              <strong>Ventajas operativas:</strong>
+            <ul class="list-disc pl-4 mt-1 space-y-1">
+            <li>Altamente personalizado para aplicaciones de Aceite de Palma</li>
+            <li>AGMA 12, precisión de los engranes de alta calidad </li>
+            <li>Engranes con ángulos de presión de 25º</li>
+        </ul>
+    </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 4: Cyclo -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="Productos/Transmisión de potencia/Reductores/Paramax® Drop-In.webp" alt="Paramax® Drop-In" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Paramax® Drop-In</h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                  Reductores Especiales Paramax® Drop-In
+                       <span class="more-text hidden">
+                    <br><br>
+                  <strong>Diferenciadores clave:</strong>
+                     <ul class="list-disc pl-4 mt-1 mb-3 space-y-1">
+                    <li>Estilos de montaje:	Horizontal, vertical y recto</li>
+                <li>Rango de relación:	1: 1.25 - 1:630</li>
+               <li>Disposición de los ejes:	Paralelos, de ángulo recto </li>
+               <li>Potencia:	De 5 HP a 5070 HP (de 3,7 a 3729 kW)</li>
+               <li>Torque nominal:	De 2600 a 740.000 N⋅m</li>
+        </ul>
+        
+              <strong>Ventajas operativas:</strong>
+            <ul class="list-disc pl-4 mt-1 space-y-1">
+            <li>Adaptaciones intercambiables</li>
+            <li>Excelencia en ingeniería </li>
+            <li>Rendimiento superior</li>
+        </ul>
+    </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 5: Hansen P4 Horizontal -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Reductores/Hansen P4 Multietapa - Horizontal.webp" alt="Hansen P4 Horizontal" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Hansen P4 Multietapa</h3>
+                    <span class="block text-[#2563eb] text-xs font-semibold mb-3">(Horizontal)</span>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Reductores diseñados especialmente para aplicaciones horizontales pesadas.
+                        <span class="more-text hidden">
+                    <br><br>
+                  <strong>Diferenciadores clave:</strong>
+                     <ul class="list-disc pl-4 mt-1 mb-3 space-y-1">
+                    <li>Montaje	Horizontal y vertical</li>
+                <li>Carcasa horizontal específica: disponible en 19 tamaños, con torque de salida de 6 a 1100 kNm.</li>
+               <li>Torque de salida nominal	de 6 a 1100 kNm (53,104 lb∙in - 9.7M lb∙in)</li>
+               <li>Velocidad de entrada	hasta 1800 rpm</li>
+               <li>Lubricación	Lubricación por salpicadura</li>
+        </ul>
+        
+              <strong>Ventajas operativas:</strong>
+            <ul class="list-disc pl-4 mt-1 space-y-1">
+            <li>Mantenimiento fácil de realizar gracias a la tapa de inspección y el sistema de sellado.</li>
+            <li>Serie de productos confiable que ofrece personalización flexible y opciones a petición. </li>
+            <li>Geometría de engranes Hansen P4 potente para niveles de mínimo ruido y vibración.</li>
+        </ul>
+    </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+            <!-- Tarjeta 5: Hansen P4 Horizontal -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Reductores/Hedcon®.webp" alt="Hedcon®" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Hedcon®</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+
+                    Sistema de engranes sinfín corona de alta resistencia y eficiencia
+
+                           <span class="more-text hidden">
+                    <br><br>
+                  <strong>Diferenciadores clave:</strong>
+                     <ul class="list-disc pl-4 mt-1 mb-3 space-y-1">
+                    <li>Direcciones de eje de salida	Horizontal, vertical ascendente, vertical descendente</li>
+                <li>Tamaño de carcasa	11 tamaños</li>
+               <li>Rango de reducción	5:1 - 100:1</li>
+               <li>Torque nominal	790 - 82,100 N⋅m</li>
+        </ul>
+        
+              <strong>Ventajas operativas:</strong>
+            <ul class="list-disc pl-4 mt-1 space-y-1">
+            <li>Bajo coeficiente de fricción en el engranaje para lograr alta eficiencia.</li>
+            <li>Alimentado por engranes sinfín de larga duración. </li>
+            <li>Mínima fluctuación de velocidad con bajo ruido y baja vibración.</li>
+        </ul>
+    </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+            <!-- Tarjeta 5: Hansen P4 Horizontal -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Reductores/HSM.webp" alt="HSM" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">HSM</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                      Reductor de Velocidad Montado en Eje Helicoidal 
+                          <span class="more-text hidden">
+                    <br><br>
+                  <strong>Diferenciadores clave:</strong>
+                     <ul class="list-disc pl-4 mt-1 mb-3 space-y-1">
+                    <li>Eje hueco con cuñero, Taper-Grip®, Screw-Conveyor</li>
+                <li>Potencia	de 1/4 a 300 HP (0.20 kW a 220 kW)</li>
+               <li>Torque nominal	hasta 389,432 lb•in (44,051 N•m)</li>
+               <li>Estándar del motor	CE, JIS, NEMA, IEC, UL, CSA</li>
+               <li>Lubricación	Lubricación por salpicadura</li>
+        </ul>
+        
+              <strong>Ventajas operativas:</strong>
+            <ul class="list-disc pl-4 mt-1 space-y-1">
+            <li>Engranes con ángulos de presión de 25°.</li>
+            <li>Bujes Taper-Grip® sin llave </li>
+            <li>Rodamientos de baleros para trabajo pesado de máxima resistencia y vida útil prolongada</li>
+        </ul>
+    </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+              <!-- Tarjeta 5: Hansen P4 Horizontal -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Reductores/Hansen M4 para Condensadores Refrigerados por Aire.webp" alt="Hansen P4 Horizontal" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Hansen M4 para Condensadores</h3>
+                    <span class="block text-[#2563eb] text-xs font-semibold mb-3">Refrigerados por Aire</span>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                            Poderosa solución para Condensadores Refrigerados por Aire
+                             <span class="more-text hidden">
+                    <br><br>
+                  <strong>Diferenciadores clave:</strong>
+                     <ul class="list-disc pl-4 mt-1 mb-3 space-y-1">
+                    <li>Tipo de carcasa	Carcasa monobloque con carcasa de linterna</li>
+                <li>Par nominal de salida	Hasta 619,552 lb-in (desde 20 hasta 70 kNm)</li>
+               <li>Velocidad de entrada	Hasta 1800 rpm</li>
+               <li>Longitud del eje	Bajo pedido</li>
+               <li>Lubricación	Bomba con lubricación integrada (sin tuberías exteriores)</li>
+        </ul>
+        
+              <strong>Ventajas operativas:</strong>
+            <ul class="list-disc pl-4 mt-1 space-y-1">
+            <li>Específicamente diseñado para Condensadores Refrigerados por Aire (ACC).</li>
+            <li>Nuestros productos "Dedicados" ofrecen una solución rentable, robusta y eficaz. </li>
+            <li>Disponible en 6 tamaños (20-70 kNm).</li>
+        </ul>
+    </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+              <!-- Tarjeta 5: Hansen P4 Horizontal -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Reductores/Hansen P4 UniMiner.webp" alt="Hansen P4 Horizontal" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Hansen P4 UniMiner</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Poderosa solución para Condensadores Refrigerados por Aire
+                        <span class="more-text hidden">
+                    <br><br>
+                  <strong>Diferenciadores clave:</strong>
+                     <ul class="list-disc pl-4 mt-1 mb-3 space-y-1">
+                    <li>5 tamaños en modelos M y 2 tamaños en modelos Z</li>
+                <li>Potencia	227 a 2,330HP (170 – 1,738 KW)</li>
+               <li>Torque nominal	12,767 a 101,347 N∙m (113,000 a 897,000 lb∙in)</li>
+               <li>Acoplamiento flexible, acoplamiento hidrodinámico, Transmisión por correa en V o por polea</li>
+        </ul>
+        
+              <strong>Ventajas operativas:</strong>
+            <ul class="list-disc pl-4 mt-1 space-y-1">
+            <li>Tiene un diseño bipartido de la carcasa que facilita dar mantenimiento en espacios de difícil acceso.</li>
+            <li>Cubiertas accesibles para servicio de inspección y mantenimiento. </li>
+            <li>200% como mínimo de torsión maxima.</li>
+        </ul>
+    </span>
+      </div>
+                    
+      <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="Productos/Transmisión de potencia/Reductores/paramax R.webp" alt="Paramax" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Paramax®</h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        La mejor opción auxiliar de giro lento, diseñada para el manejo a plena carga.
+                      <span class="more-text hidden">
+                    <br><br>
+                  <strong>Diferenciadores clave:</strong>
+                     <ul class="list-disc pl-4 mt-1 mb-3 space-y-1">
+                    <li>Direcciones de eje de salida	Horizontal, vertical descendente, vertical ascendente</li>
+                <li>Tamaño de carcasa	26 tamaños</li>
+               <li>Torque nominal	23,012 - 4;885,614 lb∙in (2,600- 552,000 N∙m)</li>
+               <li>Potencia	5 a 5,000 HP (3.7 - 3,729 kw)</li>
+               <li>Entradas	Top mount, motor integrado, doble pila, adaptadores de motor, brida de motor
+</li>
+        </ul>
+        
+              <strong>Ventajas operativas:</strong>
+            <ul class="list-disc pl-4 mt-1 space-y-1">
+            <li>Filtro respiratorio anti-polvo para trabajo pesado. (o anti-humedad también disponible).</li>
+            <li>Fabricaciones de caja con doble, triple y cuádruple reducción.</li>
+            <li>Engranes de alta presión carburizados y rectificados.</li>
+        </ul>
+    </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+          <!-- Tarjeta: Adaptador de Motor -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="Productos/Transmisión de potencia/Reductores/Adaptador de Motor.png" alt="Adaptador de Motor" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Adaptador de Motor</h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Conexión segura y alineación perfecta entre el motor y el reductor.
+                        <span class="more-text hidden">
+                            <br><br>
+                            <strong>Diferenciadores clave:</strong>
+                            <ul class="list-disc pl-4 mt-1 mb-3 space-y-1">
+                                <li>Compatibilidad total con bridas estándar NEMA e IEC.</li>
+                                <li>Elimina la necesidad de alineación manual con cople externo y base.</li>
+                                <li>Construcción robusta en fundición o aluminio según el tamaño del armazón.</li>
+                            </ul>
+                            
+                            <strong>Ventajas operativas:</strong>
+                            <ul class="list-disc pl-4 mt-1 space-y-1">
+                                <li>Instalación rápida, rígida y segura en campo.</li>
+                                <li>Reducción significativa de vibraciones y desgaste prematuro en rodamientos.</li>
+                                <li>Diseño compacto que ahorra espacio vital en la línea de producción.</li>
+                            </ul>
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta: Llamado a la acción (Contacto) -->
+            <a href="index.html#contacto" class="w-full max-w-sm mx-auto bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full cursor-pointer group block">
+                <img src="Inicio/engranaje.png" alt="Solicita tu pieza" class="w-full h-32 md:h-40 object-contain mb-6 group-hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-center justify-center">
+                    <h3 class="text-[#2563eb] text-xl md:text-2xl font-bold mb-3 uppercase group-hover:text-[#004b93] transition-colors">Tu maquinaria no puede parar.</h3>
+                    
+                    <p class="text-gray-700 text-base font-medium leading-relaxed">
+                        Solicita tu pieza y te respondemos de inmediato.
+                    </p>
+                </div>
+            </a>
+            
+        </div> <!-- Cierre del grid de productos -->
+
+        <!-- CUADRO CON BORDE AMARILLO INFERIOR -->
+        <div class="mt-10 border-[3px] border-[#ffc107] bg-white p-5 shadow-sm rounded w-full">
+            <p class="text-gray-800 text-sm md:text-base font-medium leading-relaxed text-center">
+                <span class="font-bold text-[#004b93]">Reductores y Accesorios de Transmisión:</span> Garantiza el torque, la velocidad y la alineación precisa en tus procesos. Ofrecemos equipos y adaptadores que se integran perfectamente con las normativas NEMA/IEC, asegurando un ensamble rígido, reducción de vibraciones y la máxima durabilidad para aplicaciones de trabajo continuo y pesado.
+            </p>
+        </div>
+
+    </div> <!-- Cierre del max-w-7xl -->
+</section> <!-- Cierre de la sección -->
+    </div>
+    
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const readMoreBtns = document.querySelectorAll('.read-more-btn');
+
+        readMoreBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Busca el contenedor de texto oculto asociado a este botón
+                const hiddenText = this.previousElementSibling.querySelector('.more-text');
+                
+                if (hiddenText.classList.contains('hidden')) {
+                    hiddenText.classList.remove('hidden');
+                    this.textContent = 'Ver menos';
+                } else {
+                    hiddenText.classList.add('hidden');
+                    this.textContent = 'Ver más';
+                }
+            });
+        });
+    });
+</script>
+ <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer id="footer-contacto" class="relative bg-[#0a192f] font-['Montserrat',_sans-serif] flex overflow-hidden">
+        <div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-end justify-between">
+            <div class="w-full md:flex-1 flex flex-col pt-10 pb-3 pl-4 pr-6 md:pl-8 md:pr-10">
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 text-white text-center items-end mb-5">
+                    <a href="mailto:ventas@fph.com.mx" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform cursor-pointer relative z-20">
+                        <img src="Inicio/mensaje.png" alt="Correo Electrónico" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">ventas@fph.com.mx</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/w4Ze7WfMjPsbA1zM6" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform cursor-pointer relative z-20">
+                        <img src="Inicio/ubicacion.png" alt="Ubicación" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">Oriente 10 #718, Orizaba</p>
+                    </a>
+                    <a href="https://wa.me/522721498040" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/whatsapp (1).png" alt="WhatsApp" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">(272) 149 8040</p>
+                    </a>
+                    <a href="tel:+52(272) 724 4235" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/telefono.png" alt="Teléfono" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">(272) 724 4235</p>    
+                    </a>
+                    <a href="https://www.fph.com.mx" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/Sitio web.png" alt="Sitio Web" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">www.fph.com.mx</p>
+                    </a>
+                </div>
+                <div class="w-full h-1 md:h-1.5 bg-white mb-2"></div>
+                <p class="text-white text-xs md:text-sm font-bold tracking-wide">FPH S.A. DE C.V.</p>
+            </div>
+            <div class="w-40 md:w-56 shrink-0 flex items-end justify-center">
+                <a href="#inicio" title="Volver al Inicio" class="relative z-20">
+                    <img src="Inicio/fph-logo-blanco.png" alt="Logo FPH" class="w-full h-auto object-cover drop-shadow-2xl hover:brightness-110 transition-all">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const btnMenu = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        if (btnMenu && menu) {
+            btnMenu.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPH - Soluciones para Aceite de Palma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="Inicio/Favicon-aceite-de-palma-l.png" href="/Favicon-aceite-de-palma-l.png">
+
+</head>
+<!-- Script para que funcione el Menú Móvil -->
+<script>
+    const btnMenu = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    if (btnMenu && menu) {
+        btnMenu.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    }
+</script>
+<body class="bg-gray-50">
+
+<nav class="absolute top-0 left-0 w-full z-50 font-['Montserrat',_sans-serif]">
+    <div class="max-w-7xl mx-auto px-6 py-4 md:py-6 flex justify-between items-center relative">
+        
+        <!-- LOGO (Sin filtros para que conserve sus colores originales) -->
+        <div class="flex items-center">
+            <a href="index.html#inicio">
+                <!-- Asegúrate de poner el nombre de tu logo A COLOR aquí -->
+                <img src="Inicio/fph-logo-blanco.png" alt="Logo FPH" class="w-28 sm:w-36 md:w-44 h-auto object-contain">
+            </a>
+        </div>
+        
+        <!-- CENTRO: Enlaces de Navegación (Desktop) -->
+        <div class="hidden md:flex flex-1 justify-center items-center gap-10 text-white text-sm md:text-base font-semibold tracking-wide">
+            <a href="index.html#inicio" class="hover:text-[#25d366] transition-colors drop-shadow-md">INICIO</a>
+            <a href="index.html#nosotros" class="hover:text-[#25d366] transition-colors drop-shadow-md no-underline">NOSOTROS</a>
+            
+            <div class="relative group h-full flex items-center">
+                <a href="Potencia.html" class="flex items-center gap-1.5 text-[#25d366] drop-shadow-md py-4 cursor-pointer">
+                    PRODUCTOS <i class="fas fa-chevron-down text-[10px] opacity-70 group-hover:opacity-100 transition-opacity"></i>
+                </a>
+            </div>
+            
+            <a href="index.html#mro" class="hover:text-[#25d366] transition-colors drop-shadow-md">MRO</a>
+            <a href="index.html#contacto" class="hover:text-[#25d366] transition-colors drop-shadow-md">CONTACTO</a>
+        </div>
+
+        <!-- LADO DERECHO: Botón Menú Móvil -->
+        <div class="md:hidden flex items-center">
+            <button id="mobile-menu-btn" class="text-white text-3xl focus:outline-none drop-shadow-md">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- MENU MÓVIL DESPLEGABLE -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0a192f] absolute top-full left-0 w-full shadow-lg border-t border-white/10">
+        <div class="flex flex-col text-white text-sm font-semibold tracking-wide p-6 gap-6">
+            <a href="index.html#inicio" class="mobile-link hover:text-[#ffc107] transition-colors">INICIO</a>
+            <a href="index.html#nosotros" class="mobile-link hover:text-[#ffc107] transition-colors">NOSOTROS</a>
+            <a href="Potencia.html" class="mobile-link text-[#ffc107] transition-colors">PRODUCTOS</a>
+            <a href="index.html#mro" class="mobile-link hover:text-[#ffc107] transition-colors">MRO</a>
+            <a href="index.html#contacto" class="mobile-link hover:text-[#ffc107] transition-colors">CONTACTO</a>
+        </div>
+    </div>
+</nav>
+       
+    <!-- ==========================================
+         HERO SECTION (VIDEO)
+         ========================================== -->
+    <section id="inicio" class="relative font-['Montserrat',_sans-serif] flex flex-col w-full h-[80vh] md:h-[98vh] overflow-hidden" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0 100%);">
+        <div class="absolute inset-0 w-full h-full z-0 overflow-hidden pointer-events-none bg-[#0a192f]">
+            <video autoplay loop muted playsinline class="absolute top-1/2 left-1/2 w-full h-full object-cover -translate-x-1/2 -translate-y-1/2">
+                <source src="Productos/Transmisión de potencia/Motorreductores.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="absolute inset-0 bg-[#0a192f]/60 z-10"></div>
+        <div class="relative z-20 w-full h-full max-w-5xl mx-auto px-6 flex flex-col items-center justify-center text-center pt-10">
+            <h1 class="text-white text-4xl md:text-6xl font-bold uppercase leading-tight drop-shadow-xl tracking-wide mb-4">
+                Automatización y control 
+            </h1>
+        </div>
+    </section>
+    
+    <!-- ==========================================
+         CATÁLOGO DESPLEGABLE (ACORDEÓN)
+         ========================================== -->
+    <section id="catalogo-completo" class="py-16 px-6 bg-gray-50 font-['Open_Sans',_sans-serif]">
+        <div class="max-w-7xl mx-auto space-y-4">
+
+            <!-- 1. VARIADORES  -->
+            <div class="accordion-item rounded-xl shadow-sm overflow-hidden bg-white border border-gray-200">
+                <button class="accordion-header w-full bg-[#5a9bd4] hover:bg-[#4a8bc4] text-white flex justify-between items-center px-6 py-4 font-bold text-lg md:text-xl uppercase transition-colors">
+                    <span>VARIADORES</span>
+                    <i class="fas fa-plus transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                    <div class="overflow-hidden">
+                        <div class="p-6 md:p-10 bg-white slider-container">
+                            
+                            <!-- Banner Interior -->
+                            <div class="w-full bg-[#004b93] py-4 px-4 mb-10 shadow-sm rounded">
+                                <p class="text-white text-center text-base md:text-lg font-bold uppercase tracking-wider drop-shadow-sm">
+                                    Encuentre el variador perfecto para su aplicación
+                                </p>
+                            </div>
+
+                            <div class="relative w-full">
+                                <button class="btn-left absolute -left-4 md:-left-6 top-1/2 transform -translate-y-1/2 z-10 bg-white text-[#004b93] w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full shadow-lg border border-gray-200 hover:bg-[#004b93] hover:text-white transition-colors hidden md:flex"><i class="fas fa-chevron-left text-lg"></i></button>
+                                
+                                <div class="slider-track flex overflow-x-auto gap-6 pt-4 pb-8 snap-x snap-mandatory scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Variadores/Optidrive P2.webp" alt="Variadores de frecuencia industriales" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Optidrive P2</h3>
+                                        </div>
+                                    </div>
+                                     <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Variadores/Optidrive E3 AC.webp" alt="Optidrive E3 AC" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Variador de frecuencia <BR> Optidrive E3 AC</h3>
+                                        </div>
+                                    </div>
+                                     <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Variadores/Optidrive Eco.webp" alt="Optidrive Eco" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Variador de frecuencia <BR> Optidrive Eco</h3>
+                                        </div>
+                                    </div>
+                                     <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Variadores/DX-620.webp" alt="DX-620" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">DX-620</h3>
+                                        </div>
+                                    </div>
+                                      <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Variadores/Yaskawa GA800.png" alt="Yaskawa GA800" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Yaskawa GA800</h3>
+                                        </div>
+                                    </div>
+                                         <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Variadores/El paquete GA800-CONFIGURADO.png" alt="Yaskawa GA800" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">GA800 configurado</h3>
+                                        </div>
+                                    </div>
+                                     <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Variadores/Accionamiento de matriz industrial U1000-1.png" alt="Yaskawa GA800" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Accionamiento de matriz industrial U1000</h3>
+                                        </div>
+                                    </div>
+                                     <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Variadores/Variadores de frecuencia para sistemas HVAC.png" alt="Yaskawa GA800" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Variadores de frecuencia para sistemas HVAC</h3>
+                                        </div>
+                                    </div>
+                                     <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Variadores/Yaskawa GA800.png" alt="Yaskawa GA800" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Yaskawa GA800</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Variadores/variadores y distribucion1.2.2.png" alt="Variadores de frecuencia industriales" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Variadores de frecuencia industriales</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <button class="btn-right absolute -right-4 md:-right-6 top-1/2 transform -translate-y-1/2 z-10 bg-white text-[#004b93] w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full shadow-lg border border-gray-200 hover:bg-[#004b93] hover:text-white transition-colors hidden md:flex"><i class="fas fa-chevron-right text-lg"></i></button>
+                            </div>
+
+                            <div class="mt-6 border-[3px] border-[#ffc107] bg-white p-5 shadow-sm rounded w-full">
+                                <p class="text-gray-800 text-sm md:text-base font-medium leading-relaxed text-center">
+                                    <span class="font-bold text-[#004b93]">Motores Sumitomo Drive:</span> Desarrollados bajo certificaciones internacionales NEMA Premium e IE5 Ultra-Premium. Entregan alto torque, bajo nivel de ruido y una eficiencia superior al 95%.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Relevadores de interfaz, medición y control -->
+            <div class="accordion-item rounded-xl shadow-sm overflow-hidden bg-white border border-gray-200">
+                <button class="accordion-header w-full bg-[#5a9bd4] hover:bg-[#4a8bc4] text-white flex justify-between items-center px-6 py-4 font-bold text-lg md:text-xl uppercase transition-colors">
+                    <span>Relevadores</span>
+                    <i class="fas fa-plus transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                    <div class="overflow-hidden">
+                        <div class="p-6 md:p-10 bg-white slider-container">
+                            
+                            <div class="w-full bg-[#004b93] py-4 px-4 mb-10 shadow-sm rounded">
+                                <p class="text-white text-center text-base md:text-lg font-bold uppercase tracking-wider drop-shadow-sm">
+                                    Encuentre el reductor perfecto para su aplicación
+                                </p>
+                            </div>
+
+                            <div class="relative w-full">
+                                <button class="btn-left absolute -left-4 md:-left-6 top-1/2 transform -translate-y-1/2 z-10 bg-white text-[#004b93] w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full shadow-lg border border-gray-200 hover:bg-[#004b93] hover:text-white transition-colors hidden md:flex"><i class="fas fa-chevron-left text-lg"></i></button>
+                                
+                                <div class="slider-track flex overflow-x-auto gap-6 pt-4 pb-8 snap-x snap-mandatory scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                                    
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Relevador/convertidor analogico.png" alt="Harmony Analog" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Convertidor analógico </h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Relevador/relevador de miniatura enchufable.png" alt="Cyclo Bevel BuddyBox 4" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">relevador de miniatura enchufable </h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Relevador/relevador potencia.png" alt="Altax Neo" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase"> relevador potencia, contactos mixtos - abrazadera tornillo</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Relevador/reles electromecanicos.png" alt="Cyclo®" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Relés Electromecánicos </h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Relevador/plug-in-relay.png" alt="Cyclo® LT" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">interface plug-in relay</h3>
+                                            <span class="block text-[#2563eb] text-xs font-semibold mb-3">with LTB and LED</span>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Relevador/universal plug-in relay.png" alt="Cyclo® LT" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">universal plug-in relay </h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Relevador/reles electromecanicos.png" alt="Cyclo® LT" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Relés Electromecánicos </h3>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Transmisión de potencia/Reductores/Hansen M4 para Condensadores Refrigerados por Aire.webp" alt="Hansen M4" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Hansen M4 <br> para Condensadores <br> Refrigerados por Aire</h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+                                <button class="btn-right absolute -right-4 md:-right-6 top-1/2 transform -translate-y-1/2 z-10 bg-white text-[#004b93] w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full shadow-lg border border-gray-200 hover:bg-[#004b93] hover:text-white transition-colors hidden md:flex"><i class="fas fa-chevron-right text-lg"></i></button>
+                            </div>
+
+                            <div class="mt-6 border-[3px] border-[#ffc107] bg-white p-5 shadow-sm rounded w-full">
+                                <p class="text-gray-800 text-sm md:text-base font-medium leading-relaxed text-center">
+                                    <span class="font-bold text-[#004b93]">Reductores de Alta Resistencia:</span> Diseñados con ingeniería de precisión para garantizar máxima durabilidad y torque en las condiciones más exigentes. Perfectos para aplicaciones de trabajo pesado y operaciones continuas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Herramientas hidráulicas de montaje y desmontaje -->
+            <div class="accordion-item rounded-xl shadow-sm overflow-hidden bg-white border border-gray-200">
+                <button class="accordion-header w-full bg-[#5a9bd4] hover:bg-[#4a8bc4] text-white flex justify-between items-center px-6 py-4 font-bold text-lg md:text-xl uppercase transition-colors">
+                    <span>Herramientas Hidráulicas</span>
+                    <i class="fas fa-plus transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                    <div class="overflow-hidden">
+                        <div class="p-6 md:p-10 bg-white slider-container">
+
+                            <div class="w-full bg-[#004b93] py-4 px-4 mb-10 shadow-sm rounded">
+                                <p class="text-white text-center text-base md:text-lg font-bold uppercase tracking-wider drop-shadow-sm">
+                                    FPH: El equipo que necesitas. Justo cuando lo necesitas.
+                                </p>
+                            </div>
+
+                            <div class="relative w-full">
+                                <button class="btn-left absolute -left-4 md:-left-6 top-1/2 transform -translate-y-1/2 z-10 bg-white text-[#004b93] w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full shadow-lg border border-gray-200 hover:bg-[#004b93] hover:text-white transition-colors hidden md:flex"><i class="fas fa-chevron-left text-lg"></i></button>
+                                
+                                <div class="slider-track flex overflow-x-auto gap-6 pt-4 pb-8 snap-x snap-mandatory scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                                    
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/hidraulica/juego de inyección de aceite.png" alt="Fine Cyclo" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase"> juego de inyección de aceite </h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/hidraulica/kit de inyeccion.png" alt="Fine Cyclo" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">kit de inyección de aceite</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/hidraulica/inyectores neumaticas.png" alt="Fine Cyclo" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Bombas e inyectores neumáticos</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/hidraulica/Inyector de aceite.png" alt="kit de inyección" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Inyectores de aceite</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/hidraulica/Bomba hidráulica TMJL 50.avif" alt="Bomba hidráulica TMJL 50" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Bomba hidráulica TMJL 50 </h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/hidraulica/Bomba hidráulica TMJL 100.png" alt="Bomba hidráulica TMJL 100" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Bomba hidráulica TMJL 100</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/hidraulica/bonba hidraulica 1-1.png" alt="Bomba hidráulica 729124" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Bomba hidráulica 729124</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/hidraulica/Nanometros.avif" alt="Nanometros" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Nanometros</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/hidraulica/Tapones.png" alt="IB Precision Tipo P1" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Tapones para conductos de aceite y respiraderos</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/hidraulica/Manguera de presion 1-1-1.png" alt="IB Precision Tipo PK1" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Mangueras de presión</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/hidraulica/tuvos de alta presión1.1.1.png" alt="IB Precision Tipo P2" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Tubos de alta presión</h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+                                <button class="btn-right absolute -right-4 md:-right-6 top-1/2 transform -translate-y-1/2 z-10 bg-white text-[#004b93] w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full shadow-lg border border-gray-200 hover:bg-[#004b93] hover:text-white transition-colors hidden md:flex"><i class="fas fa-chevron-right text-lg"></i></button>
+                            </div>
+
+                            <div class="mt-6 border-[3px] border-[#ffc107] bg-white p-5 shadow-sm rounded w-full">
+                                <p class="text-gray-800 text-sm md:text-base font-medium leading-relaxed text-center">
+                                    <span class="font-bold text-[#004b93]">Soluciones Motion Control Drive:</span> Variadores y equipos de control de alta precisión para optimizar la eficiencia y velocidad de sus operaciones. Minimice tiempos muertos y proteja la integridad de sus sistemas motrices automatizados.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Arracandores  -->
+            <div class="accordion-item rounded-xl shadow-sm overflow-hidden bg-white border border-gray-200">
+                <button class="accordion-header w-full bg-[#5a9bd4] hover:bg-[#4a8bc4] text-white flex justify-between items-center px-6 py-4 font-bold text-lg md:text-xl uppercase transition-colors">
+                    <span>Arracandores</span>
+                    <i class="fas fa-plus transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                    <div class="overflow-hidden">
+                        <div class="p-6 md:p-10 bg-white slider-container">
+
+                            <div class="w-full bg-[#004b93] py-4 px-4 mb-10 shadow-sm rounded">
+                                <p class="text-white text-center text-base md:text-lg font-bold uppercase tracking-wider drop-shadow-sm">
+                                    Encuentre la cadena perfecta para su aplicación
+                                </p>
+                            </div>
+
+                            <div class="relative w-full">
+                                <button class="btn-left absolute -left-4 md:-left-6 top-1/2 transform -translate-y-1/2 z-10 bg-white text-[#004b93] w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full shadow-lg border border-gray-200 hover:bg-[#004b93] hover:text-white transition-colors hidden md:flex"><i class="fas fa-chevron-left text-lg"></i></button>
+                                
+                                <div class="slider-track flex overflow-x-auto gap-6 pt-4 pb-8 snap-x snap-mandatory scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                                    
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Arrancador/Arracador a tension plano1-1-1.png" alt="Cadena 1" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Cadenas de transmisión</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Arrancador/Arrancador termomagnetico.png" alt="Cadena para cintas transportadoras" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Arrancador a tensión plena con interruptor termomagnético</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Arrancador/Arrancador a tensión plena.png" alt="Cadena de eslabones" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Arrancador a tensión plena</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Arrancador/Arrancador para piscina.png" alt="Cadena agrícola" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Arrancador a tensión plena para piscina / spa </h3>
+                                        </div>
+                                    </div>
+
+                                      <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Arrancador/Arrancador a tensión plena (estado sólido).png" alt="Cadena agrícola" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Arrancador a tensión plena (estado sólido) </h3>
+                                        </div>
+                                    </div>
+                                      <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Arrancador//Arrancador suave de estado sólido.webp" alt="Arrancador suave de estado sólido" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Arrancador suave de estado sólido </h3>
+                                        </div>
+                                    </div>
+                                      <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Arrancador/Arrancador para piscina.png" alt="Cadena agrícola" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Arrancador a tensión plena para piscina / spa </h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Arrancador/Relés Electromecánicos.png" alt="Cadena de eslabones" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Arrancador a tensión plena con interruptor termomagnético y protecciones DST </h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+                                <button class="btn-right absolute -right-4 md:-right-6 top-1/2 transform -translate-y-1/2 z-10 bg-white text-[#004b93] w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full shadow-lg border border-gray-200 hover:bg-[#004b93] hover:text-white transition-colors hidden md:flex"><i class="fas fa-chevron-right text-lg"></i></button>
+                            </div>
+
+                            <div class="mt-6 border-[3px] border-[#ffc107] bg-white p-5 shadow-sm rounded w-full">
+                                <p class="text-gray-800 text-sm md:text-base font-medium leading-relaxed text-center">
+                                    <span class="font-bold text-[#004b93]">Cadenas Industriales:</span> Fabricadas en aceros de alta resistencia, ideales para el manejo y transporte de materiales a granel, maquinaria agrícola y bandas transportadoras. Aseguran una tracción perfecta, alargando el ciclo de vida de su sistema.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEUMATICA  -->
+            <div class="accordion-item rounded-xl shadow-sm overflow-hidden bg-white border border-gray-200">
+                <button class="accordion-header w-full bg-[#5a9bd4] hover:bg-[#4a8bc4] text-white flex justify-between items-center px-6 py-4 font-bold text-lg md:text-xl uppercase transition-colors">
+                    <span>Neumática</span>
+                    <i class="fas fa-plus transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                    <div class="overflow-hidden">
+                        <div class="p-6 md:p-10 bg-white slider-container">
+
+                            <div class="w-full bg-[#004b93] py-4 px-4 mb-10 shadow-sm rounded">
+                                <p class="text-white text-center text-base md:text-lg font-bold uppercase tracking-wider drop-shadow-sm">
+                                    FPH: El equipo que necesitas. Justo cuando lo necesitas.
+                                </p>
+                            </div>
+
+                            <div class="relative w-full">
+                                <button class="btn-left absolute -left-4 md:-left-6 top-1/2 transform -translate-y-1/2 z-10 bg-white text-[#004b93] w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full shadow-lg border border-gray-200 hover:bg-[#004b93] hover:text-white transition-colors hidden md:flex"><i class="fas fa-chevron-left text-lg"></i></button>
+                                
+                                <div class="slider-track flex overflow-x-auto gap-6 pt-4 pb-8 snap-x snap-mandatory scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                                    
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control//Neumatica/hidroneumático.png" alt="simultaneador para sistema hidroneumático" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Simultaneador para Sistema Hidroneumático</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Neumatica/Acumulador de aire comprimido.png" alt="Acumulador de aire comprimido" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Acumulador de aire comprimido </h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Neumatica/Silenciador.png" alt="Silenciador" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Silenciador Silenciador U</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Neumatica/Silenciador AMTE.png" alt="Silenciador" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Silenciador AMTE</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Neumatica/Silenciador UOM, UOMS.png" alt="Silenciador" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Silenciador UOM, UOMS</h3>
+                                        </div>
+                                    </div>
+                                      <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Neumatica/Indicador de presión OH.png" alt="Indicador de presión OH" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Indicador de presión OH</h3>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Automatización-control/Neumatica/Boquilla de soplado de aire LPZ.png" alt="Boquilla de soplado de aire LPZ" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Boquilla de soplado de aire LPZ </h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+                                <button class="btn-right absolute -right-4 md:-right-6 top-1/2 transform -translate-y-1/2 z-10 bg-white text-[#004b93] w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full shadow-lg border border-gray-200 hover:bg-[#004b93] hover:text-white transition-colors hidden md:flex"><i class="fas fa-chevron-right text-lg"></i></button>
+                            </div>
+
+                            <div class="mt-6 border-[3px] border-[#ffc107] bg-white p-5 shadow-sm rounded w-full">
+                                <p class="text-gray-800 text-sm md:text-base font-medium leading-relaxed text-center">
+                                    <span class="font-bold text-[#004b93]">Sprockets Industriales:</span> Mecanizados con precisión para lograr un engranaje perfecto con sus cadenas. Diseñados para prevenir el desgaste prematuro, garantizando una transmisión de movimiento continua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. PIÑONES -->
+            <div class="accordion-item rounded-xl shadow-sm overflow-hidden bg-white border border-gray-200">
+                <button class="accordion-header w-full bg-[#5a9bd4] hover:bg-[#4a8bc4] text-white flex justify-between items-center px-6 py-4 font-bold text-lg md:text-xl uppercase transition-colors">
+                    <span>Piñones</span>
+                    <i class="fas fa-plus transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                    <div class="overflow-hidden">
+                        <div class="p-6 md:p-10 bg-white slider-container">
+
+                            <div class="w-full bg-[#004b93] py-4 px-4 mb-10 shadow-sm rounded">
+                                <p class="text-white text-center text-base md:text-lg font-bold uppercase tracking-wider drop-shadow-sm">
+                                    Encuentre el piñón perfecto para su aplicación   
+                                </p>
+                            </div>
+
+                            <div class="relative w-full">
+                                <button class="btn-left absolute -left-4 md:-left-6 top-1/2 transform -translate-y-1/2 z-10 bg-white text-[#004b93] w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full shadow-lg border border-gray-200 hover:bg-[#004b93] hover:text-white transition-colors hidden md:flex"><i class="fas fa-chevron-left text-lg"></i></button>
+                                
+                                <div class="slider-track flex overflow-x-auto gap-6 pt-4 pb-8 snap-x snap-mandatory scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                                    
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Transmisión de potencia/piñones/piñones de rodillos.avif" alt="Piñones" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Piñones de cadenas de<br>rodillos normas ANSI</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Transmisión de potencia/piñones/piñones metricas.avif" alt="Piñones" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Piñones de cadenas de<br> rodillos medidas métricas</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Transmisión de potencia/piñones/piñones y correas sincronas.png" alt="Piñones" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Piñones y correas síncronas</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Transmisión de potencia/piñones/piñones de cadena de rodillos.png" alt="Piñones" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Piñones de cadena de rodillos</h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <button class="btn-right absolute -right-4 md:-right-6 top-1/2 transform -translate-y-1/2 z-10 bg-white text-[#004b93] w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full shadow-lg border border-gray-200 hover:bg-[#004b93] hover:text-white transition-colors hidden md:flex"><i class="fas fa-chevron-right text-lg"></i></button>
+                            </div>
+
+                            <div class="mt-6 border-[3px] border-[#ffc107] bg-white p-5 shadow-sm rounded w-full">
+                                <p class="text-gray-800 text-sm md:text-base font-medium leading-relaxed text-center">
+                                    <span class="font-bold text-[#004b93]">Piñones de Acero:</span> Fabricados bajo los más altos estándares ANSI y métricos. Tratados térmicamente para extender su vida útil, previniendo el deslizamiento y asegurando la sincronización exacta.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. POLEAS -->
+            <div class="accordion-item rounded-xl shadow-sm overflow-hidden bg-white border border-gray-200">
+                <button class="accordion-header w-full bg-[#5a9bd4] hover:bg-[#4a8bc4] text-white flex justify-between items-center px-6 py-4 font-bold text-lg md:text-xl uppercase transition-colors">
+                    <span>Poleas</span>
+                    <i class="fas fa-plus transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                    <div class="overflow-hidden">
+                        <div class="p-6 md:p-10 bg-white slider-container">
+
+                            <div class="w-full bg-[#004b93] py-4 px-4 mb-10 shadow-sm rounded">
+                                <p class="text-white text-center text-base md:text-lg font-bold uppercase tracking-wider drop-shadow-sm">
+                                    Haga coincidir las poleas con las correas para prolongar la vida útil 
+                                </p>
+                            </div>
+
+                            <div class="relative w-full">
+                                <button class="btn-left absolute -left-4 md:-left-6 top-1/2 transform -translate-y-1/2 z-10 bg-white text-[#004b93] w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full shadow-lg border border-gray-200 hover:bg-[#004b93] hover:text-white transition-colors hidden md:flex"><i class="fas fa-chevron-left text-lg"></i></button>
+                                
+                                <div class="slider-track flex overflow-x-auto gap-6 pt-4 pb-8 snap-x snap-mandatory scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                            
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Transmisión de potencia/poleas/Poleas para Buje QD.png" alt="Poleas" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Poleas para Buje QD </h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Transmisión de potencia/poleas/Poleas para Buje Taper.png" alt="Poleas" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Poleas para Buje Taper</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Transmisión de potencia/poleas/Poleas para Buje MST®.png" alt="Poleas" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Poleas para Buje MST®</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Transmisión de potencia/poleas/Poleas para Potencias Fraccionales.png" alt="Poleas" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Poleas para Potencias Fraccionales</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Transmisión de potencia/poleas/Poleas de Paso Variable.png" alt="Poleas" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Poleas de Paso Variable</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Transmisión de potencia/poleas/Poleas de ala.png" alt="Poleas" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Poleas de ala</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Transmisión de potencia/poleas/Poleas para correas trapezoidales.png" alt="Poleas" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Poleas para correas trapezoidales</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Transmisión de potencia/poleas/POLEAS EN V.avif" alt="Poleas" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Poleas para correas en V</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Transmisión de potencia/poleas/Poleas de Tiempo.png" alt="Poleas" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Poleas de Tiempo</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Transmisión de potencia/poleas/Poleas HTS®.png" alt="Poleas" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Poleas HTS®</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Transmisión de potencia/poleas/Poleas HTS® de Alta Potencia.png" alt="Poleas" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Poleas HTS® de Alta Potencia</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Transmisión de potencia/poleas/Poleas MPC®.png" alt="Poleas" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Poleas MPC®</h3>
+                                        </div>
+                                    </div>
+                                    <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                        <img src="productos/Transmisión de potencia/poleas/Poleas de tambor.png" alt="Poleas" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                        <div class="text-center w-full">
+                                            <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Poleas de tambor </h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <button class="btn-right absolute -right-4 md:-right-6 top-1/2 transform -translate-y-1/2 z-10 bg-white text-[#004b93] w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full shadow-lg border border-gray-200 hover:bg-[#004b93] hover:text-white transition-colors hidden md:flex"><i class="fas fa-chevron-right text-lg"></i></button>
+                            </div>
+
+                            <div class="mt-6 border-[3px] border-[#ffc107] bg-white p-5 shadow-sm rounded w-full">
+                                <p class="text-gray-800 text-sm md:text-base font-medium leading-relaxed text-center">
+                                    <span class="font-bold text-[#004b93]">Poleas de Transmisión:</span> Diseñadas para un agarre óptimo, disminuyendo vibraciones y maximizando la transferencia de potencia. Haga coincidir correctamente nuestras poleas de alta calidad con sus correas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Controladores PLC y PAC -->
+                <div class="accordion-item rounded-xl shadow-sm overflow-hidden bg-white border border-gray-200">
+                    <button class="accordion-header w-full bg-[#5a9bd4] hover:bg-[#4a8bc4] text-white flex justify-between items-center px-6 py-4 font-bold text-lg md:text-xl uppercase transition-colors">
+                        <span>Controladores PLC y PAC</span>
+                        <i class="fas fa-plus transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out">
+                        <div class="overflow-hidden">
+                            <div class="p-6 md:p-10 bg-white slider-container">
+
+                                <div class="w-full bg-[#004b93] py-4 px-4 mb-10 shadow-sm rounded">
+                                    <p class="text-white text-center text-base md:text-lg font-bold uppercase tracking-wider drop-shadow-sm">
+                                    Acoplamientos de transmisión de potencia que satisfacen sus requisitos específicos
+                                    </p>
+                                </div>
+
+                                <div class="relative w-full">
+                                    <button class="btn-left absolute -left-4 md:-left-6 top-1/2 transform -translate-y-1/2 z-10 bg-white text-[#004b93] w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full shadow-lg border border-gray-200 hover:bg-[#004b93] hover:text-white transition-colors hidden md:flex"><i class="fas fa-chevron-left text-lg"></i></button>
+                                    
+                                    <div class="slider-track flex overflow-x-auto gap-6 pt-4 pb-8 snap-x snap-mandatory scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                                        
+                                        <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                            <img src="productos/Automatización-control/Controladores PLC y PAC/Zelio Logic.png" alt="Zelio Logic" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                            <div class="text-center w-full">
+                                                <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Zelio Logic Relevadores inteligentes </h3>
+                                            </div>
+                                        </div>
+                                            
+                                        <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                            <img src="productos/Automatización-control/Controladores PLC y PAC/Modicon Machine M221.png" alt="Modicon Machine M221" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                            <div class="text-center w-full">
+                                                <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Modicon Machine M221</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                            <img src="productos/Automatización-control/Controladores PLC y PAC/Modicon M580.png" alt="Modicon M580" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                            <div class="text-center w-full">
+                                                <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Modicon M580</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                            <img src="productos/Automatización-control/Controladores PLC y PAC/Módulos Modicon X80.png" alt="Módulos Modicon X80" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                            <div class="text-center w-full">
+                                                <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Módulos Modicon X80</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                            <img src="productos/Automatización-control/Controladores PLC y PAC/Modicon M340 PAC.png" alt="Modicon M340 PAC" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                            <div class="text-center w-full">
+                                                <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Modicon M340 PAC</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="snap-start shrink-0 w-72 md:w-[400px] bg-gradient-to-b from-white via-gray-100 to-gray-300 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start group border border-gray-100 cursor-pointer rounded-sm">
+                                            <img src="productos/Automatización-control/Controladores PLC y PAC/Preventa XPS MC.png" alt="Preventa XPS MC" class="w-full h-40 object-contain mb-6 group-hover:scale-110 transition-transform duration-500">
+                                            <div class="text-center w-full">
+                                                <h3 class="text-[#2563eb] text-lg font-bold mb-3 uppercase">Preventa XPS MC</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn-right absolute -right-4 md:-right-6 top-1/2 transform -translate-y-1/2 z-10 bg-white text-[#004b93] w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full shadow-lg border border-gray-200 hover:bg-[#004b93] hover:text-white transition-colors hidden md:flex"><i class="fas fa-chevron-right text-lg"></i></button>
+                                </div>
+
+                                <div class="mt-6 border-[3px] border-[#ffc107] bg-white p-5 shadow-sm rounded w-full">
+                                    <p class="text-gray-800 text-sm md:text-base font-medium leading-relaxed text-center">
+                                        <span class="font-bold text-[#004b93]">Acoplamientos Industriales:</span> Los controladores PLC y PAC supervisan operaciones industriales de forma sostenible, eficiente y protegida.<BR>
+                                            Nuestros PLC y PAC brindan soluciones con ciberseguridad incorporada, potencia de procesamiento necesaria para manejar el análisis de Big Data. <BR>El controlador lógico programable, PLC, destaca en la Automatización Industrial.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer id="contacto" class="relative bg-[#0a192f] font-['Montserrat',_sans-serif] flex overflow-hidden">
+        <img 
+            src="Fondo-azul.jpg" 
+            alt="Fondo Lámina Verde" 
+            class="absolute inset-0 w-full h-full object-cover z-0 mix-blend-overlay opacity-80"
+        >
+
+        <!-- Contenedor Flex Principal (Alineado al fondo) -->
+        <div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-end justify-between">
+            
+            <!-- LADO IZQUIERDO (Íconos en línea + Línea Blanca + Texto Inferior) -->
+            <div class="w-full md:flex-1 flex flex-col pt-10 pb-3 pl-4 pr-6 md:pl-8 md:pr-10">
+                
+                <!-- Contenedor de los 5 Íconos en Línea -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 text-white text-center items-end mb-5">
+                    
+                    <a href="mailto:info@fph.com.mx" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform cursor-pointer relative z-20">
+                        <img src="correo1.png" alt="Correo Electrónico" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">info@fph.com.mx</p>
+                    </a>
+
+                    <a href="https://maps.app.goo.gl/EZtrTciufw9fJPoB9" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform cursor-pointer relative z-20">
+                        <img src="ubicacion.png" alt="Ubicación" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">Oriente 10 #718, Orizaba</p>
+                    </a>
+                    
+                    <a href="https://wa.me/522721498040" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="whats.png" alt="WhatsApp" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">(272) 149 8040</p>
+                    </a>
+
+                    <a href="tel:+522721498040" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="telefono.png" alt="Teléfono" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">(272) 149 8040</p>    
+                    </a>
+
+                    <a href="https://www.fph.com.mx" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Sitio web.png" alt="Sitio Web" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">www.fph.com.mx</p>
+                    </a>
+                </div>
+
+                <div class="w-full h-1 md:h-1.5 bg-white mb-2"></div>
+
+                <p class="text-white text-xs md:text-sm font-bold tracking-wide">
+                    FPH S.A. DE C.V.
+                </p>
+            </div>
+
+            <div class="w-40 md:w-56 shrink-0 flex items-end justify-center">
+                <a href="#inicio" title="Volver al Inicio" class="relative z-20">
+                    <img 
+                        src="fph-logo-rojo.png" 
+                        alt="Logo FPH Rojo" 
+                        class="w-full h-auto object-cover drop-shadow-2xl hover:brightness-110 transition-all"
+                    >
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         SCRIPT DE LOS SLIDERS Y ACORDEONES
+         ========================================== -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            // 1. FUNCIONALIDAD DEL SLIDER
+            const sliders = document.querySelectorAll('.slider-container');
+            sliders.forEach(container => {
+                const track = container.querySelector('.slider-track');
+                const btnLeft = container.querySelector('.btn-left');
+                const btnRight = container.querySelector('.btn-right');
+                
+                const scrollAmount = 300; 
+
+                if(btnLeft && track) {
+                    btnLeft.addEventListener('click', () => {
+                        track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                    });
+                }
+
+                if(btnRight && track) {
+                    btnRight.addEventListener('click', () => {
+                        track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                    });
+                }
+            });
+
+            // 2. FUNCIONALIDAD DEL MENÚ ACORDEÓN
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+
+                    if (content.classList.contains('grid-rows-[1fr]')) {
+                        // Si está abierto, ciérralo
+                        content.classList.remove('grid-rows-[1fr]');
+                        content.classList.add('grid-rows-[0fr]');
+                        icon.classList.remove('fa-minus');
+                        icon.classList.add('fa-plus');
+                    } else {
+                        // Si está cerrado, ábrelo
+                        content.classList.remove('grid-rows-[0fr]');
+                        content.classList.add('grid-rows-[1fr]');
+                        icon.classList.remove('fa-plus');
+                        icon.classList.add('fa-minus');
+                    }
+                });
+            });
+
+        });
+    </script>
+</body>
+</html>

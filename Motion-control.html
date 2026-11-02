@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPH - Soluciones para Aceite de Palma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <link rel="icon" type="Inicio/Favicon-aceite-de-palma-l.png" href="/Favicon-aceite-de-palma-l.png">
+
+
+    <nav class="absolute top-0 left-0 w-full z-50 font-['Montserrat',_sans-serif]">
+    <div class="max-w-7xl mx-auto px-6 py-4 md:py-6 flex justify-between items-center relative">
+        
+        <!-- LOGO (Sin filtros para que conserve sus colores originales) -->
+        <div class="flex items-center">
+            <a href="index.html#inicio">
+                <!-- Asegúrate de poner el nombre de tu logo A COLOR aquí -->
+                <img src="Inicio/fph-logo-blanco.png" alt="Logo FPH" class="w-28 sm:w-36 md:w-44 h-auto object-contain">
+            </a>
+        </div>
+        
+        <!-- CENTRO: Enlaces de Navegación (Desktop) -->
+        <div class="hidden md:flex flex-1 justify-center items-center gap-10 text-white text-sm md:text-base font-semibold tracking-wide">
+            <a href="index.html#inicio" class="hover:text-[#25d366] transition-colors drop-shadow-md">INICIO</a>
+            <a href="index.html#nosotros" class="hover:text-[#25d366] transition-colors drop-shadow-md no-underline">NOSOTROS</a>
+            
+           <div class="relative group h-full flex items-center">
+                    <a href="Potencia.html" class="flex items-center gap-1.5 hover:text-[#25d366] transition-colors drop-shadow-md py-4 cursor-pointer">
+                        PRODUCTOS <i class="fas fa-chevron-down text-[10px] opacity-70 group-hover:opacity-100 transition-opacity"></i>
+                    </a>
+                </div>
+            
+            <a href="index.html#mro" class="hover:text-[#25d366] transition-colors drop-shadow-md">MRO</a>
+            <a href="index.html#contacto" class="hover:text-[#25d366] transition-colors drop-shadow-md">CONTACTO</a>
+        </div>
+
+        <!-- LADO DERECHO: Botón Menú Móvil -->
+        <div class="md:hidden flex items-center">
+            <button id="mobile-menu-btn" class="text-white text-3xl focus:outline-none drop-shadow-md">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- MENU MÓVIL DESPLEGABLE -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0a192f] absolute top-full left-0 w-full shadow-lg border-t border-white/10">
+        <div class="flex flex-col text-white text-sm font-semibold tracking-wide p-6 gap-6">
+            <a href="index.html#inicio" class="mobile-link hover:text-[#25d366] transition-colors">INICIO</a>
+            <a href="index.html#nosotros" class="mobile-link hover:text-[#25d366] transition-colors">NOSOTROS</a>
+            <a href="Potencia.html" class="mobile-link text-[#25d366] transition-colors">PRODUCTOS</a>
+            <a href="index.html#mro" class="mobile-link hover:text-[#25d366] transition-colors">MRO</a>
+            <a href="index.html#contacto" class="mobile-link hover:text-[#25d366] transition-colors">CONTACTO</a>
+        </div>
+    </div>
+</nav>
+   
+<!-- ==========================================
+         SECCIÓN PRINCIPAL (HERO)
+========================================== -->
+<section id="inicio" class="relative z-20 font-['Montserrat',_sans-serif] flex flex-col w-full h-[80vh] md:h-[100vh] overflow-hidden" style="clip-path: polygon(0 0, 100% 0, 100% 92%, 50% 100%, 0 92%);">        
+        <!-- Fondo de Video -->
+        <div class="absolute inset-0 w-full h-full z-0 overflow-hidden pointer-events-none bg-[#0a192f]">
+            <video autoplay loop muted playsinline class="absolute top-1/2 left-1/2 w-full h-full object-cover -translate-x-1/2 -translate-y-1/2">
+            <!-- AQUÍ PONES EL NOMBRE DE TU VIDEO DESCARGADO -->
+            <source src="Productos/Transmisión de potencia/Motion control/Motioncontrol.mp4" type="video/mp4">
+        </video>
+
+    </div>
+    
+    <!-- Filtro oscuro reforzado para que las letras blancas resalten perfecto sobre el video -->
+    <div class="absolute inset-0 bg-[#0a192f]/60 z-10"></div>
+
+    <!-- Contenido Centrado (Títulos) -->
+    <div class="relative z-20 w-full h-full max-w-5xl mx-auto px-6 flex flex-col items-center justify-center text-center pt-10">
+        
+        <!-- Título Principal -->
+        <h1 class="text-white text-4xl md:text-6xl font-bold uppercase leading-tight drop-shadow-xl tracking-wide mb-4">
+            Motion control
+        </h1>
+    </div>
+   </section>
+  
+<section id="motion-control" class="py-16 px-6 bg-white font-['Open_Sans',_sans-serif]">
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Título de la Sección -->
+        <div class="text-center mb-6">
+            <h2 class="text-[#004b93] text-2xl md:text-3xl font-extrabold uppercase tracking-wide">Motion Control Drive</h2>
+        </div>
+
+        <!-- BANNER AZUL -->
+        <div class="w-full bg-[#004b93] py-4 md:py-5 px-4 mb-10 shadow-md rounded-sm">
+            <h2 class="text-white text-center text-base md:text-lg lg:text-xl font-bold uppercase tracking-wider drop-shadow-sm">
+                FPH: El equipo que necesitas. Justo cuando lo necesitas.
+            </h2>
+        </div>
+
+        <!-- Enlace "Ver todos >" -->
+        <div class="w-full flex justify-end mb-6">
+            <a href="Potencia.html" class="text-blue-600 text-lg md:text-xl font-bold flex items-center gap-2 hover:text-[#004b93] transition-colors cursor-pointer">
+                Ver todos <i class="fas fa-chevron-right text-base mt-1"></i>
+            </a>
+        </div>
+
+        <!-- CUADRÍCULA DE PRODUCTOS (3 por fila: lg:grid-cols-3) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Tarjeta 1 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motion control/Fine Cyclo® Serie A Tipo FC.webp" alt="Fine Cyclo" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Fine Cyclo® Serie A Tipo FC</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Reductor de precisión de cero juego mecánico (Zero Backlash).
+                        <!-- Texto oculto -->
+                        <span class="more-text hidden">
+                            <br><br>Ideal para aplicaciones de robótica, automatización y posicionamiento preciso. Cuenta con una alta rigidez torsional y una capacidad excepcional para soportar cargas de choque sin perder sincronía.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>    
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motion control/Fine Cyclo® Serie A Tipo F1C.webp" alt="Fine Cyclo" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Fine Cyclo® Serie A Tipo F1C</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Diseño compacto con montaje de brida para servomotores.
+                        <span class="more-text hidden">
+                            <br><br>Ofrece un rendimiento de transmisión altamente eficiente. Su estructura está optimizada para la integración directa con motores de control de movimiento, reduciendo el espacio necesario en la máquina.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motion control/Fine Cyclo® Serie A Tipo F2C.webp" alt="Fine Cyclo" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Fine Cyclo® Serie A Tipo F2C</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Engranaje cicloidal avanzado para control de ejes rotativos.
+                        <span class="more-text hidden">
+                            <br><br>Garantiza un control de trayectoria suave y preciso, eliminando las vibraciones en arranques y paradas rápidas. Altamente recomendado para máquinas herramienta y mesas indexadoras.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motion control/Fine Cyclo® Serie A Tipo FC.webp" alt="Fine Cyclo" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Fine Cyclo® Serie C</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Precisión milimétrica para aplicaciones de alta dinámica.
+                        <span class="more-text hidden">
+                            <br><br>Su configuración robusta proporciona una inercia baja y una respuesta rápida del sistema. Excelente opción para la automatización de fábricas donde los tiempos de ciclo cortos son críticos.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motion control/Fine Cyclo® Serie D.webp" alt="Fine Cyclo" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Fine Cyclo® Serie D</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Equipos con rodamiento de rodillos cruzados integrados.
+                        <span class="more-text hidden">
+                            <br><br>Soporta grandes cargas de empuje y momentos flectores en un solo componente. Simplifica el diseño de la maquinaria, ahorrando costos y tiempo de ensamblaje para los fabricantes.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 6 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motion control/Fine Cyclo® Serie T.webp" alt="Fine Cyclo" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Fine Cyclo® Serie T</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Serie de orificio pasante amplio para cableado simplificado.
+                        <span class="more-text hidden">
+                            <br><br>El amplio centro hueco (hollow shaft) permite enrutar de manera segura cables eléctricos, mangueras de aire y líneas hidráulicas directamente a través del centro del reductor, ahorrando espacio.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 7 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motion control/Fine Cyclo® Serie W.webp" alt="Fine Cyclo" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Fine Cyclo® Serie W</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Reductor de engranajes de alta precisión para servicio pesado.
+                        <span class="more-text hidden">
+                            <br><br>Diseñado para soportar niveles de torque masivos mientras mantiene una precisión sub-arco-minuto. Es el estándar de la industria para ejes principales de robots industriales grandes.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 8 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motion control/Fine Cyclo UA-Series.webp" alt="Fine Cyclo UA-Series" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Fine Cyclo UA-Series</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Serie ultra compacta de precisión cicloidal.
+                        <span class="more-text hidden">
+                            <br><br>Ofrece un perfil extremadamente delgado, permitiendo reducir significativamente el tamaño total del equipo. Diseñada especialmente para articulaciones robóticas y dispositivos médicos.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+
+            <!-- Tarjeta 9 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motion control/IB Precision Tipo P1.webp" alt="IB Precision Tipo P1" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">IB Precision Tipo P1</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Reductor planetario de precisión con brida de salida.
+                        <span class="more-text hidden">
+                            <br><br>Acoplamiento rápido a servomotores y excelente relación costo-beneficio. Garantiza un nivel de ruido muy bajo y una larga vida sin necesidad de mantenimiento adicional.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                                </div>
+            </div>
+
+            <!-- Tarjeta 10 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motion control/IB Precision Tipo PK1.webp" alt="IB Precision Tipo PK1" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">IB Precision Tipo PK1</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Engranajes planetarios de alta precisión en ángulo recto.
+                        <span class="more-text hidden">
+                            <br><br>Ideal para situaciones donde el espacio de montaje es restrictivo. Mantiene una alta eficiencia de transmisión y un bajo nivel de juego angular (backlash).
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+
+                     <!-- Tarjeta 11 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Motion control/IB Precision Tipo PK1.webp" alt="IB Precision Tipo PK1" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">IB Precision Tipo P2</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                   Diseño planetario reforzado para aplicaciones dinámicas.
+
+                        <span class="more-text hidden">
+                            <br><br>Su arquitectura optimiza la rigidez radial y axial, permitiendo soportar poleas y piñones directamente en el eje de salida sin necesidad de apoyos adicionales.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+            
+            <!-- Tarjeta 12 -->
+              <a href="index.html#contacto" class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full cursor-pointer group block">
+                <img src="Inicio/engranaje.png" alt="Solicita tu pieza" class="w-full h-48 object-contain mb-6 group-hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-center justify-center">
+                    <h3 class="text-[#2563eb] text-xl md:text-2xl font-bold mb-3 uppercase group-hover:text-[#004b93] transition-colors">¿No está en la lista?</h3>
+                    
+                    <p class="text-gray-700 text-base font-medium leading-relaxed">
+                        Pregúntanos
+                    </p>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- CUADRO CON BORDE AMARILLO INFERIOR -->
+        <div class="mt-10 border-[3px] border-[#ffc107] bg-white p-5 shadow-sm rounded w-full">
+            <p class="text-gray-800 text-sm md:text-base font-medium leading-relaxed text-center">
+                <span class="font-bold text-[#004b93]">Motion Control:</span>Controla servomotores, brazos robóticos y maquinaria CNC. Su objetivo es sincronizar múltiples ejes para realizar tareas complejas como ensamblaje, empaque o corte con precisión milimétrica
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const readMoreBtns = document.querySelectorAll('.read-more-btn');
+
+        readMoreBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Busca el contenedor de texto oculto asociado a este botón
+                const hiddenText = this.previousElementSibling.querySelector('.more-text');
+                
+                if (hiddenText.classList.contains('hidden')) {
+                    hiddenText.classList.remove('hidden');
+                    this.textContent = 'Ver menos';
+                } else {
+                    hiddenText.classList.add('hidden');
+                    this.textContent = 'Ver más';
+                }
+            });
+        });
+    });
+</script>
+  <footer id="footer-contacto" class="relative bg-[#0a192f] font-['Montserrat',_sans-serif] flex overflow-hidden">
+        <div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-end justify-between">
+            <div class="w-full md:flex-1 flex flex-col pt-10 pb-3 pl-4 pr-6 md:pl-8 md:pr-10">
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 text-white text-center items-end mb-5">
+                    <a href="mailto:ventas@fph.com.mx" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform cursor-pointer relative z-20">
+                        <img src="Inicio/mensaje.png" alt="Correo Electrónico" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">ventas@fph.com.mx</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/w4Ze7WfMjPsbA1zM6" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform cursor-pointer relative z-20">
+                        <img src="Inicio/ubicacion.png" alt="Ubicación" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">Oriente 10 #718, Orizaba</p>
+                    </a>
+                    <a href="https://wa.me/522721498040" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/whatsapp (1).png" alt="WhatsApp" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">(272) 149 8040</p>
+                    </a>
+                    <a href="tel:+52(272) 724 4235" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/telefono.png" alt="Teléfono" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">(272) 724 4235</p>    
+                    </a>
+                    <a href="https://www.fph.com.mx" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/Sitio web.png" alt="Sitio Web" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">www.fph.com.mx</p>
+                    </a>
+                </div>
+                <div class="w-full h-1 md:h-1.5 bg-white mb-2"></div>
+                <p class="text-white text-xs md:text-sm font-bold tracking-wide">FPH S.A. DE C.V.</p>
+            </div>
+            <div class="w-40 md:w-56 shrink-0 flex items-end justify-center">
+                <a href="#inicio" title="Volver al Inicio" class="relative z-20">
+                    <img src="Inicio/fph-logo-blanco.png" alt="Logo FPH" class="w-full h-auto object-cover drop-shadow-2xl hover:brightness-110 transition-all">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+    const btnMenu = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    if (btnMenu && menu) {
+        btnMenu.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    }
+</script>

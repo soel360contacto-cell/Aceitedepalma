@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPH - Soluciones para Aceite de Palma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="Inicio/Favicon-aceite-de-palma-l.png" href="/Favicon-aceite-de-palma-l.png">
+
+<nav class="absolute top-0 left-0 w-full z-50 font-['Montserrat',_sans-serif]">
+    <div class="max-w-7xl mx-auto px-6 py-4 md:py-6 flex justify-between items-center relative">
+        
+        <div class="flex items-center">
+            <a href="index.html#inicio">
+                <img src="Inicio/fph-logo-blanco.png" alt="Logo FPH" class="w-28 sm:w-36 md:w-44 h-auto object-contain">
+            </a>
+        </div>
+        
+        <div class="hidden md:flex flex-1 justify-center items-center gap-10 text-white text-sm md:text-base font-semibold tracking-wide">
+            <a href="index.html#inicio" class="hover:text-[#25d366] transition-colors drop-shadow-md">INICIO</a>
+            <a href="index.html#nosotros" class="hover:text-[#25d366] transition-colors drop-shadow-md no-underline">NOSOTROS</a>
+            
+            <div class="relative group h-full flex items-center">
+                <a href="Potencia.html" class="flex items-center gap-1.5 text-[#25d366] drop-shadow-md py-4 cursor-pointer">
+                    PRODUCTOS <i class="fas fa-chevron-down text-[10px] opacity-70 group-hover:opacity-100 transition-opacity"></i>
+                </a>
+            </div>
+            
+            <a href="index.html#mro" class="hover:text-[#25d366] transition-colors drop-shadow-md">MRO</a>
+            <a href="index.html#contacto" class="hover:text-[#25d366] transition-colors drop-shadow-md">CONTACTO</a>
+        </div>
+
+        <!-- LADO DERECHO: Botón Menú Móvil -->
+        <div class="md:hidden flex items-center">
+            <button id="mobile-menu-btn" class="text-white text-3xl focus:outline-none drop-shadow-md">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+     <!-- MENU MÓVIL DESPLEGABLE -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0a192f] absolute top-full left-0 w-full shadow-lg border-t border-white/10">
+        <div class="flex flex-col text-white text-sm font-semibold tracking-wide p-6 gap-6">
+            <a href="index.html#inicio" class="mobile-link hover:text-[#25d366] transition-colors">INICIO</a>
+            <a href="index.html#nosotros" class="mobile-link hover:text-[#25d366] transition-colors">NOSOTROS</a>
+            <a href="Potencia.html" class="mobile-link text-[#25d366] transition-colors">PRODUCTOS</a>
+            <a href="index.html#mro" class="mobile-link hover:text-[#25d366] transition-colors">MRO</a>
+            <a href="index.html#contacto" class="mobile-link hover:text-[#25d366] transition-colors">CONTACTO</a>
+        </div>
+    </div>
+</nav>
+
+   <!-- SECCIÓN PRINCIPAL (HERO) CON VIDEO LOCAL Y CORTE EN "V" -->
+<section id="inicio" class="relative z-20 font-['Montserrat',_sans-serif] flex flex-col w-full h-[80vh] md:h-[100vh] overflow-hidden" style="clip-path: polygon(0 0, 100% 0, 100% 92%, 50% 100%, 0 92%);">        
+        <div class="absolute inset-0 w-full h-full z-0 overflow-hidden pointer-events-none bg-[#0a192f]">
+            <video autoplay loop muted playsinline class="absolute top-1/2 left-1/2 w-full h-full object-cover -translate-x-1/2 -translate-y-1/2">
+            <source src="Productos//Transmisión de potencia/Engranes y bujes/engranes.mp4" type="video/mp4">
+        </video>
+
+    </div>
+    
+    <!-- Filtro oscuro reforzado para que las letras blancas resalten perfecto sobre el video -->
+    <div class="absolute inset-0 bg-[#0a192f]/60 z-10"></div>
+
+    <!-- Contenido Centrado (Títulos) -->
+    <div class="relative z-20 w-full h-full max-w-5xl mx-auto px-6 flex flex-col items-center justify-center text-center pt-10">
+        
+        <!-- Título Principal -->
+        <h1 class="text-white text-4xl md:text-6xl font-bold uppercase leading-tight drop-shadow-xl tracking-wide mb-4">
+         Engranes y bujes<br>
+        </h1>
+    </div>
+   
+</section>
+<!-- ==========================================
+     SECCIÓN: POLEAS (Sin Acordeón)
+     ========================================== -->
+<section id="poleas" class="py-16 px-6 bg-white font-['Open_Sans',_sans-serif]">
+    <div class="max-w-7xl mx-auto">
+
+        <!-- BANNER AZUL -->
+        <div class="w-full bg-[#004b93] py-4 md:py-5 px-4 mb-10 shadow-md rounded-sm">
+            <h2 class="text-white text-center text-base md:text-lg lg:text-xl font-bold uppercase tracking-wider drop-shadow-sm">
+                 "Bujes y engranes duraderos: la pieza exacta para que nunca te detengas."
+            </h2>
+        </div>
+
+        <!-- Enlace "Ver todos >" -->
+        <div class="w-full flex justify-end mb-6">
+            <a href="Potencia.html" class="text-blue-600 text-lg md:text-xl font-bold flex items-center gap-2 hover:text-[#004b93] transition-colors cursor-pointer">
+                Ver todos <i class="fas fa-chevron-right text-base mt-1"></i>
+            </a>
+        </div>
+
+        <!-- CUADRÍCULA DE PRODUCTOS -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Tarjeta 1: Bujes MST -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Engranes y bujes//Bujes MST®.png" alt="Bujes MST" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Bujes MST®</h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Sistema de sujeción preciso para una fijación firme en flechas y ejes.
+                        <!-- Texto oculto -->
+                        <span class="more-text hidden">
+                            <br><br>Facilitan la instalación y remoción segura de poleas y sprockets sin dañar el eje. Están diseñados para soportar altos torques de transmisión, garantizando un acoplamiento concéntrico y sin juego mecánico.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: Bujes QD -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Engranes y bujes/Bujes QD.png" alt="Bujes QD" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Bujes QD</h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Bujes de desconexión rápida (Quick Detachable) para aplicaciones de servicio pesado.
+                        <!-- Texto oculto -->
+                        <span class="more-text hidden">
+                            <br><br>Garantizan un apriete sumamente robusto mediante brida cónica empernada, eliminando por completo el deslizamiento axial. Ideales para transmisiones industriales sometidas a inversiones de marcha y cargas de impacto continuas.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3: Bujes Taper -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Engranes y bujes/Bujes Taper.png" alt="Bujes Taper" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Bujes Taper</h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Sistema cónico estandarizado para un montaje y desmontaje sumamente ágil.
+                        <!-- Texto oculto -->
+                        <span class="more-text hidden">
+                            <br><br>Permiten un acoplamiento universal en poleas, catarinas y acoplamientos. Su diseño ranurado con roscas de extracción facilita el mantenimiento preventivo, reduciendo drásticamente los tiempos de paro en planta.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4: Bujes QD con Rodamiento -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Engranes y bujes/Bujes QD con Rodamiento.png" alt="Bujes QD con Rodamiento" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Bujes QD con Rodamiento</h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Soporte especializado que integra fijación cónica y elementos rodantes.
+                        <!-- Texto oculto -->
+                        <span class="more-text hidden">
+                            <br><br>Diseñados para garantizar la alineación precisa de flechas y poleas, optimizando el apoyo mecánico en transmisiones complejas y reduciendo la fricción rotativa en los puntos críticos de soporte.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 5: Mazas para Soldar -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Engranes y bujes/Mazas para Soldar.png" alt="Mazas para Soldar" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Mazas para Soldar</h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Componentes mecanizados listos para integrarse mediante soldadura a impulsores y tambores.
+                        <!-- Texto oculto -->
+                        <span class="more-text hidden">
+                            <br><br>Permiten incorporar un sistema de buje cónico desmontable (Taper o QD) en estructuras metálicas hechas a la medida, ventiladores industriales o poleas especiales fabricadas en campo.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 6: Bujes Deslizantes -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Engranes y bujes/Bujes de Deslizantes.png" alt="Bujes de Deslizamiento" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Bujes de Deslizamiento</h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Elementos de soporte diseñados para guiar movimientos axiales o rotativos con baja fricción.
+                        <!-- Texto oculto -->
+                        <span class="more-text hidden">
+                            <br><br>Fabricados con materiales antifricción de alta calidad, aseguran un desplazamiento suave en mecanismos deslizantes, minimizando el desgaste por contacto constante en maquinaria automatizada.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 7: Bujes Guía -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Engranes y bujes/Bujes Guía.png" alt="Bujes Guía" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Bujes Guía</h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Componentes de precisión para orientar y mantener la alineación de elementos móviles.
+                        <!-- Texto oculto -->
+                        <span class="more-text hidden">
+                            <br><br>Evitan desviaciones laterales indeseadas en sistemas mecánicos, barras de guía y dispositivos de ensamblaje, garantizando la repetibilidad y exactitud en cada ciclo de trabajo.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 8: Bujes de Bronce -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Engranes y bujes/Bujes de Bronce.png" alt="Bujes de Bronce" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Bujes de Bronce</h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Alta resistencia a la carga y excelente comportamiento autolubricante natural.
+                        <!-- Texto oculto -->
+                        <span class="more-text hidden">
+                            <br><br>Ideal para soportar altas presiones de contacto y temperaturas moderadas en aplicaciones rotativas pesadas. Su aleación metálica protege el eje contra rayaduras al sacrificar controladamente el buje ante desgaste extremo.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 9: Ejes Paralelos -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Engranes y bujes/Ejes Paralelos.png" alt="Ejes Paralelos" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Ejes Paralelos</h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Sistemas de transmisión y flechado con alineación paralela de alta rigidez.
+                        <!-- Texto oculto -->
+                        <span class="more-text hidden">
+                            <br><br>Garantizan una distribución uniforme del esfuerzo mecánico entre engranes o poleas acopladas, maximizando la eficiencia en la transferencia de potencia y reduciendo el riesgo de flexión en las flechas.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 10: Engranes Rectos -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Engranes y bujes//engranes rectos.png" alt="Engranes Rectos" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Engranes Rectos</h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Transmisión directa y positiva de movimiento entre ejes paralelos.
+                        <!-- Texto oculto -->
+                        <span class="more-text hidden">
+                            <br><br>Diseñados con dientes paralelos al eje de rotación para ofrecer una relación de velocidad constante y exacta. Fabricados en aceros de alta resistencia templados para soportar exigencias severas de trabajo continuo.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 11: Engranes Cónicos -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/Engranes y bujes//Engranes Cónicos.png" alt="Engranes Cónicos" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Engranes Cónicos</h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Transmisión de potencia entre ejes que se intersectan (típicamente a 90 grados).
+                        <!-- Texto oculto -->
+                        <span class="more-text hidden">
+                            <br><br>Su geometría cónica permite desviar el ángulo de rotación de la fuerza motriz con gran eficiencia. Son indispensables en cajas de transmisión angulares, diferenciales y equipos de elevación industrial.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 12: Llamado a la acción (Contacto) con ancho limitado -->
+            <a href="index.html#contacto" class="w-full max-w-sm mx-auto bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full cursor-pointer group block">
+                <img src="inicio/engranaje.png" alt="Solicita tu pieza" class="w-full h-32 md:h-40 object-contain mb-6 group-hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-center justify-center">
+                    <h3 class="text-[#2563eb] text-xl md:text-2xl font-bold mb-3 uppercase group-hover:text-[#004b93] transition-colors">¿Tu equipo requiere una pieza distinta?</h3>
+                    <p class="text-gray-700 text-base font-medium leading-relaxed">
+                        Consúltala con nuestros asesores. Te ayudamos a encontrar el componente exacto.
+                    </p>
+                </div>
+            </a>
+
+        </div> <!-- Cierre del grid de productos -->
+
+        <!-- CUADRO CON BORDE AMARILLO INFERIOR -->
+        <div class="mt-10 border-[3px] border-[#ffc107] bg-white p-5 shadow-sm rounded w-full">
+            <p class="text-justify text-gray-800 text-sm md:text-base font-medium leading-relaxed text-center">
+                <span class="font-bold text-[#004b93]">Bujes, Poleas y Engranes de Precisión:</span> La perfecta sincronía mecánica comienza con un acoplamiento exacto. Nuestra gama de bujes de sujeción, mazas, poleas y engranes rectos o cónicos asegura una transmisión de torque confiable, alineación perfecta y menor desgaste en las flechas, maximizando la productividad y el rendimiento global de su maquinaria industrial.
+            </p>
+        </div>
+
+    </div> <!-- Cierre del max-w-7xl -->
+</section> <!-- Cierre de la sección -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const readMoreBtns = document.querySelectorAll('.read-more-btn');
+
+        readMoreBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Busca el contenedor de texto oculto asociado a este botón
+                const hiddenText = this.previousElementSibling.querySelector('.more-text');
+                
+                if (hiddenText.classList.contains('hidden')) {
+                    hiddenText.classList.remove('hidden');
+                    this.textContent = 'Ver menos';
+                } else {
+                    hiddenText.classList.add('hidden');
+                    this.textContent = 'Ver más';
+                }
+            });
+        });
+    });
+</script>
+ <footer id="footer-contacto" class="relative bg-[#0a192f] font-['Montserrat',_sans-serif] flex overflow-hidden">
+        <div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-end justify-between">
+            <div class="w-full md:flex-1 flex flex-col pt-10 pb-3 pl-4 pr-6 md:pl-8 md:pr-10">
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 text-white text-center items-end mb-5">
+                    <a href="mailto:ventas@fph.com.mx" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform cursor-pointer relative z-20">
+                        <img src="Inicio/mensaje.png" alt="Correo Electrónico" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">ventas@fph.com.mx</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/w4Ze7WfMjPsbA1zM6" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform cursor-pointer relative z-20">
+                        <img src="Inicio/ubicacion.png" alt="Ubicación" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">Oriente 10 #718, Orizaba</p>
+                    </a>
+                    <a href="https://wa.me/522721498040" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/whatsapp (1).png" alt="WhatsApp" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">(272) 149 8040</p>
+                    </a>
+                    <a href="tel:+52(272) 724 4235" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/telefono.png" alt="Teléfono" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">(272) 724 4235</p>    
+                    </a>
+                    <a href="https://www.fph.com.mx" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/Sitio web.png" alt="Sitio Web" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">www.fph.com.mx</p>
+                    </a>
+                </div>
+                <div class="w-full h-1 md:h-1.5 bg-white mb-2"></div>
+                <p class="text-white text-xs md:text-sm font-bold tracking-wide">FPH S.A. DE C.V.</p>
+            </div>
+            <div class="w-40 md:w-56 shrink-0 flex items-end justify-center">
+                <a href="#inicio" title="Volver al Inicio" class="relative z-20">
+                    <img src="Inicio/fph-logo-blanco.png" alt="Logo FPH" class="w-full h-auto object-cover drop-shadow-2xl hover:brightness-110 transition-all">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+    const btnMenu = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    if (btnMenu && menu) {
+        btnMenu.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    }
+</script>

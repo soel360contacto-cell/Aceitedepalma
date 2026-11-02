@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPH - Soluciones para Aceite de Palma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="icon" type="Inicio/Favicon-aceite-de-palma-l.png" href="/Favicon-aceite-de-palma-l.png">
+    
+<nav class="absolute top-0 left-0 w-full z-50 font-['Montserrat',_sans-serif]">
+    <div class="max-w-7xl mx-auto px-6 py-4 md:py-6 flex justify-between items-center relative">
+        
+        <div class="flex items-center">
+            <a href="index.html#inicio">
+                <img src="Inicio/fph-logo-blanco.png" alt="Logo FPH" class="w-28 sm:w-36 md:w-44 h-auto object-contain">
+            </a>
+        </div>
+        
+        <div class="hidden md:flex flex-1 justify-center items-center gap-10 text-white text-sm md:text-base font-semibold tracking-wide">
+            <a href="index.html#inicio" class="hover:text-[#25d366] transition-colors drop-shadow-md">INICIO</a>
+            <a href="index.html#nosotros" class="hover:text-[#25d366] transition-colors drop-shadow-md no-underline">NOSOTROS</a>
+            
+            <div class="relative group h-full flex items-center">
+                <a href="Potencia.html" class="flex items-center gap-1.5 text-[#25d366] drop-shadow-md py-4 cursor-pointer">
+                    PRODUCTOS <i class="fas fa-chevron-down text-[10px] opacity-70 group-hover:opacity-100 transition-opacity"></i>
+                </a>
+            </div>
+            
+            <a href="index.html#mro" class="hover:text-[#25d366] transition-colors drop-shadow-md">MRO</a>
+            <a href="index.html#contacto" class="hover:text-[#25d366] transition-colors drop-shadow-md">CONTACTO</a>
+        </div>
+
+        <!-- LADO DERECHO: Botón Menú Móvil -->
+        <div class="md:hidden flex items-center">
+            <button id="mobile-menu-btn" class="text-white text-3xl focus:outline-none drop-shadow-md">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+     <!-- MENU MÓVIL DESPLEGABLE -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0a192f] absolute top-full left-0 w-full shadow-lg border-t border-white/10">
+        <div class="flex flex-col text-white text-sm font-semibold tracking-wide p-6 gap-6">
+            <a href="index.html#inicio" class="mobile-link hover:text-[#25d366] transition-colors">INICIO</a>
+            <a href="index.html#nosotros" class="mobile-link hover:text-[#25d366] transition-colors">NOSOTROS</a>
+            <a href="Potencia.html" class="mobile-link text-[#25d366] transition-colors">PRODUCTOS</a>
+            <a href="index.html#mro" class="mobile-link hover:text-[#25d366] transition-colors">MRO</a>
+            <a href="index.html#contacto" class="mobile-link hover:text-[#25d366] transition-colors">CONTACTO</a>
+        </div>
+    </div>
+</nav>
+
+   <!-- SECCIÓN PRINCIPAL (HERO) CON VIDEO LOCAL Y CORTE EN "V" -->
+<section id="inicio" class="relative font-['Montserrat',_sans-serif] flex flex-col w-full h-[80vh] md:h-[98vh] overflow-hidden" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0 100%);">
+    
+  
+    <!-- Agregué un bg-[#0a192f] por si el video tarda 1 segundo en cargar, no se vea blanco -->
+    <div class="absolute inset-0 w-full h-full z-0 overflow-hidden pointer-events-none bg-[#0a192f]">
+        
+        <!-- Etiqueta de Video Nativo -->
+        <video 
+            autoplay 
+            loop 
+            muted 
+            playsinline 
+            class="absolute top-1/2 left-1/2 w-full h-full object-cover -translate-x-1/2 -translate-y-1/2"
+        >
+            <!-- AQUÍ PONES EL NOMBRE DE TU VIDEO DESCARGADO -->
+            <source src="Productos/Transmisión de potencia/cadenas/CADENAS.mp4" type="video/mp4">
+        </video>
+
+    </div>
+    
+    <!-- Filtro oscuro reforzado para que las letras blancas resalten perfecto sobre el video -->
+    <div class="absolute inset-0 bg-[#0a192f]/60 z-10"></div>
+
+    <!-- Contenido Centrado (Títulos) -->
+    <div class="relative z-20 w-full h-full max-w-5xl mx-auto px-6 flex flex-col items-center justify-center text-center pt-10">
+        
+        <!-- Título Principal -->
+        <h1 class="text-white text-4xl md:text-6xl font-bold uppercase leading-tight drop-shadow-xl tracking-wide mb-4">
+            Cadenas 
+        </h1>
+    </div>
+   </section>
+   <!-- ==========================================
+     SECCIÓN: CADENAS (Sin Acordeón)
+     ========================================== -->
+<section id="cadenas" class="py-16 px-6 bg-white font-['Open_Sans',_sans-serif]">
+    <div class="max-w-7xl mx-auto">
+        <!-- BANNER AZUL -->
+        <div class="w-full bg-[#004b93] py-4 md:py-5 px-4 mb-10 shadow-md rounded-sm">
+            <h2 class="text-white text-center text-base md:text-lg lg:text-xl font-bold uppercase tracking-wider drop-shadow-sm">
+                    Reduzca los costos de mantenimiento con cadena de calidad resistente 
+            </h2>
+        </div>
+
+        <!-- Enlace "Ver todos >" -->
+        <div class="w-full flex justify-end mb-6">
+            <a href="Potencia.html" class="text-blue-600 text-lg md:text-xl font-bold flex items-center gap-2 hover:text-[#004b93] transition-colors cursor-pointer">
+                Ver todos <i class="fas fa-chevron-right text-base mt-1"></i>
+            </a>
+        </div>
+
+        <!-- CUADRÍCULA DE PRODUCTOS (3 por fila: lg:grid-cols-3) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Tarjeta 1 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/cadenas/cadenas de trasmición.avif" alt="Cadenas de transmisión" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Cadenas de transmisión</h3>
+                    
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Diseñadas para la transferencia de potencia eficiente en equipos rotativos.
+                        <!-- Texto oculto -->
+                        <span class="more-text hidden">
+                            <br><br>Fabricadas con aceros de aleación de alta resistencia. Resisten el estiramiento inicial y la fatiga por cargas cíclicas, garantizando una operación suave y prolongando la vida útil del sistema motriz en entornos industriales severos.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/cadenas/cadena transportadora.avif" alt="Cadenas transportadoras" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Cadenas para cintas transportadoras</h3>
+                    
+                    <div class="text-justifytext-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Cadenas robustas para el manejo de materiales y carga pesada.
+                        <span class="more-text hidden">
+                            <br><br>Permiten acoplar accesorios especiales (aditamentos) para mover productos, arrastrar materiales o elevar cargas. Tienen tolerancias estrictas para evitar atascos en la línea de producción y minimizar los tiempos muertos.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/cadenas/cadena de eslobones.png" alt="Cadenas de eslabones" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Cadenas de eslabones</h3>
+                      <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Solución clásica de alta resistencia para izaje y amarre.
+                        <span class="more-text hidden">
+                            <br><br>Forjadas sin soldaduras expuestas para mantener la integridad bajo cargas extremas. Ideal para polipastos, grúas y aplicaciones donde la seguridad en el izaje y la durabilidad son los factores más críticos.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                                    </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/cadenas/cadena agricola.png" alt="Cadenas agrícolas" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Cadenas agrícolas</h3>
+                     <div class="text-justify text-  gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Diseñadas específicamente para el rudo entorno del campo y la cosecha.
+                        <span class="more-text hidden">
+                            <br><br>Su diseño cuenta con holguras adicionales que evitan que la tierra, el lodo y los residuos vegetales atasquen la cadena. Altamente resistentes a la corrosión y a las condiciones abrasivas de la maquinaria agroindustrial.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+
+               <!-- Tarjeta 5 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/cadenas/Cadenas de molino soldadas.png" alt="Cadenas agrícolas" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Cadenas de acero soldadas</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        ¡Máxima seguridad y resistencia para tus proyectos y cargas pesadas! 
+                         <span class="more-text hidden">
+                            <br><br>Se recomiendan las cadenas de acero soldadas para la mayoría de las aplicaciones de transporte, accionamiento y elevación donde se requiere una cadena de acero sin rodillos de alta resistencia. Estas cadenas funcionarán con los mismos piñones que sus contrapartes de cadena fundida.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+               
+                 <!-- Tarjeta 6 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/cadenas/Cadenas de arrastre soldadas.png" alt="Cadenas de arrastre soldadas" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Cadenas de arrastre soldadas</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                         Específicamente para trabajos de tracción, sectores agrícola, forestal, de transporte y de construcción.
+                         <span class="more-text hidden">
+                            <br><br>Gracias a su amplia superficie de empuje, las cadenas portacables de acero soldado ofrecen una considerable capacidad de carga a velocidades moderadas. Se pueden utilizar en las mismas tolvas y con las mismas ruedas dentadas que las cadenas de fundición.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+             <!-- Tarjeta 7-->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/cadenas/Cadenas de acero con casquillos clase SS.png" alt="Cadenas de acero con casquillos clase SS" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Cadenas de acero con casquillos clase SS</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Alta Resistencia a la Abrasión
+                         <span class="more-text hidden">
+                            <br><br>La cadena de acero con bujes Allied-Locke SS Class es ideal para operar en condiciones extremadamente abrasivas o con mucha arena, así como para ascensores con una amplia separación entre ejes. Esta cadena se conoce comúnmente como "sin rodillos".
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+             <!-- Tarjeta 8 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/cadenas/clase MSR.png" alt="Cadenas de arrastre soldadas" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Cadenas con rodillos y casquillos clase MSR</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                         Específicamente para operar condiciones ambientales severas y cargas de alto impacto.
+                        <span class="more-text hidden">
+                            <br><br>El diseño exclusivo de esta cadena ofrece un menor coeficiente de fricción de rodadura y una mayor resistencia a la corrosión. No requiere lubricación. Además de la industria cárnica, esta cadena es adecuada para muchas otras aplicaciones, especialmente en el procesamiento de alimentos.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+            <!-- Tarjeta 9 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/cadenas/acero con desplazamiento.png" alt="Cadenas de arrastre soldadas" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Acero con desplazamiento</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Aceros y tratamientos térmicos avanzados para superar los desafíos operativos.
+                         <span class="more-text hidden">
+                            <br><br>La cadena de transmisión de acero con eslabones desplazados Allied-Locke está diseñada para sistemas de transmisión eléctrica, maquinaria de construcción y cintas transportadoras. Funciona en las condiciones más exigentes a velocidades moderadamente altas.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+        
+              <!-- Tarjeta 10 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/cadenas/Cadenas forjadas sin remaches.png" alt="Cadenas de arrastre soldadas" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Cadenas forjadas sin remaches</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Soluciones más robustas, eficientes y confiables para el transporte pesado industrial. 
+                        <span class="more-text hidden">
+                            <br><br>La cadena combinada Allied-Locke se utiliza ampliamente para elevar y transportar una gran variedad de materiales abrasivos y no abrasivos. No se recomienda para cadenas motrices.
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+
+               <!-- Tarjeta 11 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/cadenas/Cadenas de molino.png" alt="Cadenas de arrastre soldadas" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Cadenas de transferencia, molino, arrastre y clase "H"</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Componentes críticos diseñados para resistir las condiciones de trabajo más severas.
+                         <span class="more-text hidden">
+                            <br><br>comercial detallada de los tipos principales (transferencia, molino, arrastre y Clase "H") optimizada para resaltar sus aplicaciones, ventajas técnicas y argumentos de venta.
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+
+                
+               <!-- Tarjeta 12 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Transmisión de potencia/cadenas/acero al manganeso.png" alt="Cadenas de arrastre soldadas" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Cadenas de acero al manganeso fundido</h3>
+                    <div class="text-justify text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                         Transportadores y sistemas de izaje de cargas pesadas
+                         <span class="more-text hidden">
+                            <br><br>El exclusivo diseño de las barras laterales contribuye significativamente a la vida útil y resistencia de la cadena al proporcionar una mayor superficie de contacto y proteger la cabeza del pasador.
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+                
+             <!-- Tarjeta 11: Llamado a la acción (Contacto) -->
+            <a href="index.html#contacto" class="w-full max-w-sm mx-auto bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full cursor-pointer group block">
+                <img src="Inicio/engranaje.png" alt="Solicita tu pieza" class="w-full h-32 md:h-40 object-contain mb-6 group-hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-center justify-center">
+                    <h3 class="text-[#2563eb] text-xl md:text-2xl font-bold mb-3 uppercase group-hover:text-[#004b93] transition-colors">¿Buscas otro modelo?</h3>
+                    <p class="text-gray-700 text-base font-medium leading-relaxed">
+                        Solicita tu pieza y te respondemos de inmediato.
+                    </p>
+                </div>
+            </a>
+            </div>
+        
+
+        <!-- CUADRO CON BORDE AMARILLO INFERIOR (Cadenas) -->
+        <div class="mt-10 border-[3px] border-[#ffc107] bg-white p-5 shadow-sm rounded w-full">
+            <p class="text-justify text-gray-800 text-sm md:text-base font-medium leading-relaxed text-center">
+                <span class="font-bold text-[#004b93]">Cadenas de Transmisión y Transporte Industrial:</span> Componentes fundamentales para la transmisión de potencia mecánica y el manejo eficiente de materiales. Nuestras cadenas están diseñadas bajo estrictos estándares de calidad y alta resistencia a la tensión, garantizando un rendimiento óptimo, gran durabilidad y un engrane preciso bajo las condiciones más severas de carga continua en la industria.
+            </p>
+        </div>
+
+    </div> 
+</section> 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const readMoreBtns = document.querySelectorAll('.read-more-btn');
+
+        readMoreBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Busca el contenedor de texto oculto asociado a este botón
+                const hiddenText = this.previousElementSibling.querySelector('.more-text');
+                
+                if (hiddenText.classList.contains('hidden')) {
+                    hiddenText.classList.remove('hidden');
+                    this.textContent = 'Ver menos';
+                } else {
+                    hiddenText.classList.add('hidden');
+                    this.textContent = 'Ver más';
+                }
+            });
+        });
+    });
+</script>
+
+    <footer id="footer-contacto" class="relative bg-[#0a192f] font-['Montserrat',_sans-serif] flex overflow-hidden">
+        <div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-end justify-between">
+            <div class="w-full md:flex-1 flex flex-col pt-10 pb-3 pl-4 pr-6 md:pl-8 md:pr-10">
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 text-white text-center items-end mb-5">
+                    <a href="mailto:ventas@fph.com.mx" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform cursor-pointer relative z-20">
+                        <img src="Inicio/mensaje.png" alt="Correo Electrónico" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">ventas@fph.com.mx</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/w4Ze7WfMjPsbA1zM6" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform cursor-pointer relative z-20">
+                        <img src="Inicio/ubicacion.png" alt="Ubicación" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">Oriente 10 #718, Orizaba</p>
+                    </a>
+                    <a href="https://wa.me/522721498040" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/whatsapp (1).png" alt="WhatsApp" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">(272) 149 8040</p>
+                    </a>
+                    <a href="tel:+52(272) 724 4235" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/telefono.png" alt="Teléfono" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">(272) 724 4235</p>    
+                    </a>
+                    <a href="https://www.fph.com.mx" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/Sitio web.png" alt="Sitio Web" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">www.fph.com.mx</p>
+                    </a>
+                </div>
+                <div class="w-full h-1 md:h-1.5 bg-white mb-2"></div>
+                <p class="text-white text-xs md:text-sm font-bold tracking-wide">FPH S.A. DE C.V.</p>
+            </div>
+            <div class="w-40 md:w-56 shrink-0 flex items-end justify-center">
+                <a href="#inicio" title="Volver al Inicio" class="relative z-20">
+                    <img src="Inicio/fph-logo-blanco.png" alt="Logo FPH" class="w-full h-auto object-cover drop-shadow-2xl hover:brightness-110 transition-all">
+                </a>
+            </div>
+        </div>
+    </footer>
+<script>
+    const btnMenu = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    if (btnMenu && menu) {
+        btnMenu.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    }
+</script>

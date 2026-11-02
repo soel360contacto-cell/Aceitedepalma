@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPH - Soluciones para Aceite de Palma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ <nav class="absolute top-0 left-0 w-full z-50 font-['Montserrat',_sans-serif]">
+    <div class="max-w-7xl mx-auto px-6 py-4 md:py-6 flex justify-between items-center relative">
+     <link rel="icon" type="Inicio/Favicon-aceite-de-palma-l.png" href="/Favicon-aceite-de-palma-l.png">
+
+        
+        <!-- LOGO (Sin filtros para que conserve sus colores originales) -->
+        <div class="flex items-center">
+            <a href="index.html#inicio">
+                <!-- Asegúrate de poner el nombre de tu logo A COLOR aquí -->
+                <img src="Inicio/fph-logo-blanco.png" alt="Logo FPH" class="w-28 sm:w-36 md:w-44 h-auto object-contain">
+            </a>
+        </div>
+        
+        <!-- CENTRO: Enlaces de Navegación (Desktop) -->
+        <div class="hidden md:flex flex-1 justify-center items-center gap-10 text-white text-sm md:text-base font-semibold tracking-wide">
+            <a href="index.html#inicio" class="hover:text-[#25d366] transition-colors drop-shadow-md">INICIO</a>
+            <a href="index.html#nosotros" class="hover:text-[#25d366] transition-colors drop-shadow-md no-underline">NOSOTROS</a>
+            
+           <div class="relative group h-full flex items-center">
+                    <a href="Potencia.html" class="flex items-center gap-1.5 hover:text-[#25d366] transition-colors drop-shadow-md py-4 cursor-pointer">
+                        PRODUCTOS <i class="fas fa-chevron-down text-[10px] opacity-70 group-hover:opacity-100 transition-opacity"></i>
+                    </a>
+                </div>
+            
+            <a href="index.html#mro" class="hover:text-[#25d366] transition-colors drop-shadow-md">MRO</a>
+            <a href="index.html#contacto" class="hover:text-[#25d366] transition-colors drop-shadow-md">CONTACTO</a>
+        </div>
+
+        <!-- LADO DERECHO: Botón Menú Móvil -->
+        <div class="md:hidden flex items-center">
+            <button id="mobile-menu-btn" class="text-white text-3xl focus:outline-none drop-shadow-md">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- MENU MÓVIL DESPLEGABLE -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0a192f] absolute top-full left-0 w-full shadow-lg border-t border-white/10">
+        <div class="flex flex-col text-white text-sm font-semibold tracking-wide p-6 gap-6">
+            <a href="index.html#inicio" class="mobile-link hover:text-[#25d366] transition-colors">INICIO</a>
+            <a href="index.html#nosotros" class="mobile-link hover:text-[#25d366] transition-colors">NOSOTROS</a>
+            <a href="Potencia.html" class="mobile-link text-[#25d366] transition-colors">PRODUCTOS</a>
+            <a href="index.html#mro" class="mobile-link hover:text-[#25d366] transition-colors">MRO</a>
+            <a href="index.html#contacto" class="mobile-link hover:text-[#25d366] transition-colors">CONTACTO</a>
+        </div>
+    </div>
+</nav>
+   
+<!-- ==========================================
+         SECCIÓN PRINCIPAL (HERO)
+========================================== -->
+<section id="inicio" class="relative z-20 font-['Montserrat',_sans-serif] flex flex-col w-full h-[80vh] md:h-[100vh] overflow-hidden" style="clip-path: polygon(0 0, 100% 0, 100% 92%, 50% 100%, 0 92%);">        
+        <!-- Fondo de Video -->
+        <div class="absolute inset-0 w-full h-full z-0 overflow-hidden pointer-events-none bg-[#0a192f]">
+            <video autoplay loop muted playsinline class="absolute top-1/2 left-1/2 w-full h-full object-cover -translate-x-1/2 -translate-y-1/2">
+            <source src="Productos/Automatización-control/Variadores/variadores1.mp4" type="video/mp4">
+        </video>
+
+    </div>
+    
+    <!-- Filtro oscuro reforzado para que las letras blancas resalten perfecto sobre el video -->
+    <div class="absolute inset-0 bg-[#0a192f]/60 z-10"></div>
+
+    <!-- Contenido Centrado (Títulos) -->
+    <div class="relative z-20 w-full h-full max-w-5xl mx-auto px-6 flex flex-col items-center justify-center text-center pt-10">
+        
+        <!-- Título Principal -->
+        <h1 class="text-white text-4xl md:text-6xl font-bold uppercase leading-tight drop-shadow-xl tracking-wide mb-4">
+         Variadores 
+        </h1>
+    </div>
+   </section>
+ 
+<section id="motion-control" class="py-16 px-6 bg-white font-['Open_Sans',_sans-serif]">
+    <div class="max-w-7xl mx-auto">
+
+        <!-- BANNER AZUL -->
+        <div class="w-full bg-[#004b93] py-4 md:py-5 px-4 mb-10 shadow-md rounded-sm">
+            <h2 class="text-white text-center text-base md:text-lg lg:text-xl font-bold uppercase tracking-wider drop-shadow-sm">
+                    "Reduce el gasto energético hasta en un 50% regulando la velocidad exacta de tus motores."
+            </h2>
+        </div>
+
+        <!-- Enlace "Ver todos >" -->
+        <div class="w-full flex justify-end mb-6">
+            <a href="Potencia.html" class="text-blue-600 text-lg md:text-xl font-bold flex items-center gap-2 hover:text-[#004b93] transition-colors cursor-pointer">
+                Ver todos <i class="fas fa-chevron-right text-base mt-1"></i>
+            </a>
+        </div>
+
+        <!-- CUADRÍCULA DE PRODUCTOS (3 por fila: lg:grid-cols-3) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Tarjeta 1: Optidrive P2 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Variadores/Optidrive P2.webp" alt="Optidrive P2" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Optidrive P2</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Variador de frecuencia de alto rendimiento para motores de inducción estándar y de imán permanente.
+                        <!-- Texto oculto -->
+                        <span class="more-text hidden">
+                            <br><br>El control vectorial de lazo abierto proporciona hasta 200% de torque desde velocidad cero. Ofrece capacidad de control de bucle abierto o cerrado de última generación para motores PM de alta eficiencia, garantizando una respuesta dinámica en aplicaciones industriales exigentes.
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>    
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: Optidrive E3 AC -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Variadores/Optidrive E3 AC.webp" alt="Optidrive E3 AC" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Optidrive E3 AC</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Variador de frecuencia compacto y versátil para múltiples tipos de motores.
+                        <span class="more-text hidden">
+                            <br><br>Proporciona un control preciso y confiable para motores de eficiencia estándar, premium y super-premium. Es totalmente compatible con Motores de inducción (IM), Motores de imanes permanentes (PM), Motores de CC sin escobillas (BLDC) y Motores de reluctancia síncrona (SynRM).
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+
+            <!-- Tarjeta 3: Optidrive Eco -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Variadores/Optidrive Eco.webp" alt="Optidrive Eco" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Optidrive Eco</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Diseñado específicamente para el control eficiente de bombas y ventiladores HVAC.
+                        <span class="more-text hidden">
+                            <br><br>Optidrive Eco ha sido diseñado para maximizar el potencial de ahorro de energía en aplicaciones de bombeo y ventilación, al mismo tiempo que proporciona beneficios adicionales significativos en la reducción de los costos de instalación, los costos de mantenimiento y el tiempo de inactividad operativo.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4: DX-620 -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Variadores/DX-620.webp" alt="DX-620" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">DX-620</h3>
+                    
+                      <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Variadores de frecuencia descentralizados con alta protección ambiental.
+                        <span class="more-text hidden">
+                            <br><br>Fácil de seleccionar, poner en marcha y utilizar. Su arquitectura descentralizada permite instalarlo directamente cerca del motor, reduciendo el cableado. Preparado para el futuro, facilita actualizaciones para las necesidades cambiantes de la industria 4.0.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 5: Arrancador con VDF -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Variadores/variador de frecuencia1.1.1.png" alt="Arrancador con variador de frecuencia" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Arrancador con variador de frecuencia</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                 Gabinete de control integral con Variador de velocidad Enerwell® y gestión avanzada.
+                        <span class="more-text hidden">
+                    <br><br>
+                  <strong>Diferenciadores clave:</strong>
+                 <ul class="list-disc pl-4 mt-1 mb-3 space-y-1">
+                <li>Potencia nominal: 7.5 Hp (hasta 17 A).</li>
+                <li>Incluye interruptor termomagnético, supresor de picos trifásico y sensor de presión con 5 m de cable.</li>
+        </ul>
+        
+              <strong>Ventajas operativas:</strong>
+            <ul class="list-disc pl-4 mt-1 space-y-1">
+            <li>Protección contra sobrecarga, alto y bajo voltaje, pérdida de fase y trabajo en seco. Control de temperatura mediante sonda PT100 y botón de paro de emergencia.</li>
+        </ul>
+    </span>
+   </div>
+                    
+   <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+  </div>
+            </div>
+
+            <!-- Tarjeta 6: Variador enfriado por aire -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Variadores/variador por aire.png" alt="Variador de frecuencia (enfriado por aire)" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Variador de frecuencia (enfriado por aire)</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Sistema de refrigeración optimizada para gabinetes de alta densidad térmica.
+                        <span class="more-text hidden">
+                            <br><br>Su diseño con disipadores térmicos expuestos permite montarlo con la sección de enfriamiento fuera del panel principal de control, reduciendo significativamente la temperatura interna del gabinete eléctrico y la necesidad de aire acondicionado adicional.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 7: Variador de frecuencia (Sistemas de agua) -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Variadores/variador 2.png" alt="Variador de frecuencia Especializado" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Variador de Frecuencia Especializado</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Gestión inteligente y protección avanzada para sistemas de bombeo.
+                        <span class="more-text hidden">
+                            <br><br>Garantiza presión constante en la red y protege integralmente la bomba mediante la detección de: alto y bajo voltaje, sobrecarga, fuga a tierra, falta de agua (trabajo en seco), baja carga, paro por alta presión y pérdida de fase del motor.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                </div>
+            </div>
+
+            <!-- Tarjeta 8: Variador Yaskawa -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Variadores/VARIADOR-INDUSTRAL YASKAWA.png" alt="Variadores de frecuencia industriales" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Variadores de frecuencia Yaskawa</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        La referencia mundial en confiabilidad y control de movimiento industrial.
+                        <span class="more-text hidden">
+                            <br><br>Estos variadores de CA incorporan los últimos avances tecnológicos en el control de velocidad de motores, ofreciendo un MTBF (Tiempo medio entre fallas) excepcional. Soportan amplias redes de comunicación industrial y algoritmos de control de torque extremadamente precisos.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+            
+            <!-- Tarjeta 9: Reactores de Línea -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Variadores/Reactores de Línea.png" alt="Reactores de Línea (Entrada)" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Reactores de Línea (Entrada)</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Protección esencial contra picos de voltaje y perturbaciones de la red eléctrica.
+                        <span class="more-text hidden">
+                            <br><br>Se instalan a la entrada del variador de frecuencia para atenuar las fluctuaciones transitorias de energía, reducir las corrientes de arranque excesivas y mitigar parcialmente los armónicos devueltos a la red, prolongando la vida útil del equipo electrónico.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+            
+            <!-- Tarjeta 10: Filtros de Armónicas -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Variadores/Filtros de Armónicas Filtros EMC RFI.png" alt="Filtros de Armónicas Filtros EMC RFI" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Filtros de Armónicas y Filtros EMC/RFI</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Garantizan el cumplimiento de las normativas de calidad de energía.
+                        <span class="more-text hidden">
+                            <br><br>Los filtros EMC/RFI previenen que las interferencias electromagnéticas generadas por el variador afecten a equipos electrónicos sensibles cercanos. Por su parte, los filtros de armónicas purifican la onda senoidal, reduciendo el calentamiento y las pérdidas de energía en la red de la planta.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+
+              <!-- Tarjeta 11: Variadores Propósito General -->
+            <div class="bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full">
+                <img src="productos/Automatización-control/Variadores/Variadores de Propósito General.png" alt="Variadores de Propósito General" class="w-full h-48 object-contain mb-6 hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-left">
+                    <h3 class="text-[#2563eb] text-xl font-bold mb-3 uppercase">Variadores de Propósito General</h3>
+                    
+                    <div class="text-gray-700 text-sm leading-relaxed mb-2 text-content">
+                        Soluciones robustas y rentables para la automatización de cintas y mezcladoras.
+                        <span class="more-text hidden">
+                            <br><br>Diseñados para un ajuste rápido y facilidad de uso en aplicaciones cotidianas que no requieren algoritmos complejos. Ofrecen un excelente control escalar (V/f) para bandas transportadoras, extractores y agitadores con un bajo costo de inversión.
+                        </span>
+                    </div>
+                    
+                    <button class="read-more-btn text-[#2563eb] text-sm font-semibold hover:underline mb-6 text-left w-fit cursor-pointer">Ver más</button>
+                    
+                </div>
+            </div>
+            
+             <!-- Tarjeta 12: Llamado a la acción (Contacto) - RESTRINGIDO EN ANCHO -->
+            <a href="index.html#contacto" class="w-full max-w-sm mx-auto bg-gradient-to-b from-gray-50 to-gray-200 p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-start border border-gray-200 rounded-xl h-full cursor-pointer group block">
+                <img src="Inicio/engranaje.png" alt="Solicita tu pieza" class="w-full h-32 md:h-40 object-contain mb-6 group-hover:scale-105 transition-transform duration-500">
+                <div class="w-full flex flex-col flex-1 text-center justify-center">
+                    <h3 class="text-[#2563eb] text-xl md:text-2xl font-bold mb-3 uppercase group-hover:text-[#004b93] transition-colors">Buscamos la pieza por ti.</h3>
+                    <p class="text-gray-700 text-base font-medium leading-relaxed">
+                        ¡Escríbenos! Asesoría experta en selección de variadores.
+                    </p>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- CUADRO CON BORDE AMARILLO INFERIOR -->
+        <div class="mt-10 border-[3px] border-[#ffc107] bg-white p-5 shadow-sm rounded w-full">
+            <p class="text-gray-800 text-sm md:text-base font-medium leading-relaxed text-center">
+                <span class="font-bold text-[#004b93]">Control y Eficiencia de Motores:</span> Ya sea para aplicaciones estándar o ambientes severos, contamos con variadores de frecuencia que incluyen carcasas IP66 / NEMA 4X, ideales para resistir exposición directa al polvo pesado, humedad extrema o entornos químicos agresivos sin necesidad de gabinetes protectores adicionales.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const readMoreBtns = document.querySelectorAll('.read-more-btn');
+
+        readMoreBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Busca el contenedor de texto oculto asociado a este botón
+                const hiddenText = this.previousElementSibling.querySelector('.more-text');
+                
+                if (hiddenText.classList.contains('hidden')) {
+                    hiddenText.classList.remove('hidden');
+                    this.textContent = 'Ver menos';
+                } else {
+                    hiddenText.classList.add('hidden');
+                    this.textContent = 'Ver más';
+                }
+            });
+        });
+    });
+</script>
+
+  <footer id="footer-contacto" class="relative bg-[#0a192f] font-['Montserrat',_sans-serif] flex overflow-hidden">
+        <div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-end justify-between">
+            <div class="w-full md:flex-1 flex flex-col pt-10 pb-3 pl-4 pr-6 md:pl-8 md:pr-10">
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 text-white text-center items-end mb-5">
+                    <a href="mailto:ventas@fph.com.mx" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform cursor-pointer relative z-20">
+                        <img src="Inicio/mensaje.png" alt="Correo Electrónico" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">ventas@fph.com.mx</p>
+                    </a>
+                    <a href="https://maps.app.goo.gl/w4Ze7WfMjPsbA1zM6" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform cursor-pointer relative z-20">
+                        <img src="Inicio/ubicacion.png" alt="Ubicación" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">Oriente 10 #718, Orizaba</p>
+                    </a>
+                    <a href="https://wa.me/522721498040" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/whatsapp (1).png" alt="WhatsApp" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">(272) 149 8040</p>
+                    </a>
+                    <a href="tel:+52(272) 724 4235" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/telefono.png" alt="Teléfono" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">(272) 724 4235</p>    
+                    </a>
+                    <a href="https://www.fph.com.mx" target="_blank" class="flex flex-col items-center justify-end h-full hover:scale-105 transition-transform relative z-20">
+                        <img src="Inicio/Sitio web.png" alt="Sitio Web" class="h-8 md:h-10 object-contain mb-2">
+                        <p class="text-xs md:text-sm">www.fph.com.mx</p>
+                    </a>
+                </div>
+                <div class="w-full h-1 md:h-1.5 bg-white mb-2"></div>
+                <p class="text-white text-xs md:text-sm font-bold tracking-wide">FPH S.A. DE C.V.</p>
+            </div>
+            <div class="w-40 md:w-56 shrink-0 flex items-end justify-center">
+                <a href="#inicio" title="Volver al Inicio" class="relative z-20">
+                    <img src="Inicio/fph-logo-blanco.png" alt="Logo FPH" class="w-full h-auto object-cover drop-shadow-2xl hover:brightness-110 transition-all">
+                </a>
+            </div>
+        </div>
+    </footer>
+       <!-- Script para que funcione el Menú Móvil -->
+<script>
+    const btnMenu = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    if (btnMenu && menu) {
+        btnMenu.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    }
+</script>
+     
