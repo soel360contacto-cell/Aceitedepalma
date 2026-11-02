@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/png" href="/Inicio/palma.png">
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
     
     <!-- ESTILOS PARA EL CARRUSEL DE MARCAS (3 LÍNEAS) -->
     <style>
@@ -429,8 +430,6 @@
 </section>
         <!--Seccion de contacto-->
         <section id="contacto" class="relative bg-white py-24 px-6 font-['Montserrat',_sans-serif] overflow-hidden">
-            
-            <!-- Fondo decorativo sesgado (Gris muy sutil) -->
             <div class="absolute inset-0 bg-gray-50 skew-y-3 transform origin-bottom-left -z-20"></div>
 
             <img src="Inicio/Gota2.png" alt="Fondo FPH" class="absolute top-1/4 right-0 transform -translate-y-1 w-full md:w-1/2 object-contain opacity-30 pointer-events-none -z-10">
@@ -451,58 +450,53 @@
                     </div>
                 </div>
 
-                <!-- COLUMNA DERECHA: Formulario (Ahora es MÁS ANGOSTO: ocupa 5 columnas y es Gris) -->
-                <div class="lg:col-span-5 flex justify-end">
-                    <!-- Fondo Gris (bg-gray-100) para el formulario -->
-                    <div class="w-full max-w-[500px] bg-gray-100 rounded-[2rem] p-8 md:p-10 shadow-[0_20px_50px_rgba(0,0,0,0.1)] border-t-8 border-[#087A4A]">
-                        <!-- Ajusta la ruta en src. Está en la esquina inferior derecha. -->
-                    <img src="Inicio/Gota2.png" alt="Marca de agua" class="absolute -right-10 -center-5 w-64 h-68 object-contain opacity-15 pointer-events-none z-0">
-                        <h3 class="text-[#004b93] text-2xl md:text-3xl font-bold mb-8">Envíanos tu consulta</h3>
-                        
-                        <form action="#" method="POST" class="space-y-6">
-                            
-                            <!-- Grid para Nombre y Teléfono en la misma fila -->
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                                <div>
-                                    <label class="block text-gray-600 text-xs font-bold mb-2 uppercase tracking-wider">Nombre completo</label>
-                                    <!-- Campos en blanco (bg-white) para que resalten sobre el fondo gris -->
-                                    <input type="text" placeholder="Ej. Juan Pérez" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3.5 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#2563eb] transition-all font-medium shadow-sm">
-                                </div>
-                                <div>
-                                    <label class="block text-gray-600 text-xs font-bold mb-2 uppercase tracking-wider">Teléfono</label>
-                                    <input type="tel" placeholder="Ej. 555 123 4567" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3.5 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#2563eb] transition-all font-medium shadow-sm">
-                                </div>
-                            </div>
+              <!-- COLUMNA DERECHA: Formulario (Ahora es MÁS ANGOSTO: ocupa 5 columnas y es Gris) -->
+<div class="lg:col-span-5 flex justify-end">
+    <!-- Fondo Gris (bg-gray-100) para el formulario -->
+    <div class="relative w-full max-w-[500px] bg-gray-100 rounded-[2rem] p-8 md:p-10 shadow-[0_20px_50px_rgba(0,0,0,0.1)] border-t-8 border-[#087A4A]">
+        <img src="/Inicio/Gota2.png" alt="Marca de agua" class="absolute -right-10 -center-5 w-64 h-68 object-contain opacity-15 pointer-events-none z-0">
+        <h3 class="text-[#004b93] text-2xl md:text-3xl font-bold mb-8">Envíanos tu consulta</h3>
+            <form action="https://formspree.io/f/xdeepbej" method="POST" class="space-y-6 relative z-10">
+            <input type="text" name="_gotcha" style="display:none">
 
-                            <div>
-                                <label class="block text-gray-600 text-xs font-bold mb-2 uppercase tracking-wider">Correo Electrónico</label>
-                                <input type="email" placeholder="tu@empresa.com" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3.5 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#2563eb] transition-all font-medium shadow-sm">
-                            </div>
+            <!-- 3. Asunto personalizado para que no caiga en spam -->
+            <input type="hidden" name="_subject" value="Nueva consulta web - Aceite de Palma">
 
-                            <div>
-                                <label class="block text-gray-600 text-xs font-bold mb-2 uppercase tracking-wider">¿En qué podemos ayudarte?</label>
-                                <textarea rows="4" placeholder="Escribe aquí los detalles..." class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3.5 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#2563eb] transition-all font-medium resize-none shadow-sm"></textarea>
-                            </div>
-
-                            <!-- ReCAPTCHA -->
-                            <div class="bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-between w-full shadow-sm">
-                                <div class="flex items-center gap-3">
-                                    <input type="checkbox" class="w-6 h-6 border-gray-300 rounded cursor-pointer text-[#25d366] focus:ring-[#2563eb]">
-                                    <span class="text-sm font-bold text-gray-700">No soy un robot</span>
-                                </div>
-                                <div class="flex flex-col items-center">
-                                    <i class="fas fa-sync-alt text-[#2563eb] text-xl"></i>
-                                    <span class="text-[10px] text-gray-500 mt-1 font-bold">reCAPTCHA</span>
-                                </div>
-                            </div>
-
-                            <button type="submit" class="w-full bg-[#004b93] text-white font-extrabold text-base md:text-lg rounded-xl py-4 mt-2 hover:bg-[#087A4A] hover:text-[#0a192f] hover:shadow-lg transition-all duration-300 uppercase tracking-widest">
-                                Enviar Mensaje <i class="fas fa-paper-plane ml-2"></i>
-                            </button>
-                            
-                        </form>
-                    </div>
+            <!-- Grid para Nombre y Teléfono en la misma fila -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-gray-600 text-xs font-bold mb-2 uppercase tracking-wider">Nombre completo</label>
+                    <input type="text" name="name" required placeholder="Ej. Juan Pérez" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3.5 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#2563eb] transition-all font-medium shadow-sm">
                 </div>
+                <div>
+                    <label class="block text-gray-600 text-xs font-bold mb-2 uppercase tracking-wider">Teléfono</label>
+                    <input type="tel" name="phone" required placeholder="Ej. 555 123 4567" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3.5 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#2563eb] transition-all font-medium shadow-sm">
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-gray-600 text-xs font-bold mb-2 uppercase tracking-wider">Correo Electrónico</label>
+                <!-- El atributo name="email" hace que al dar en "Responder" en tu correo, le respondas directo al cliente -->
+                <input type="email" name="email" required placeholder="tu@empresa.com" class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3.5 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#2563eb] transition-all font-medium shadow-sm">
+            </div>
+
+            <div>
+                <label class="block text-gray-600 text-xs font-bold mb-2 uppercase tracking-wider">¿En qué podemos ayudarte?</label>
+                <textarea name="message" required rows="4" placeholder="Escribe aquí los detalles..." class="w-full bg-white border border-gray-200 rounded-xl px-4 py-3.5 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#2563eb] transition-all font-medium resize-none shadow-sm"></textarea>
+            </div>
+
+                <!-- ReCAPTCHA Oficial de Google -->
+<div class="g-recaptcha flex justify-center" data-sitekey="6LcKkA0uAAAAAOkLikzVFNzS4C0a_kg_QXFlt-Uo"></div>     
+                <button type="submit" class="w-full bg-[#004b93] text-white font-extrabold text-base md:text-lg rounded-xl py-4 mt-2 hover:bg-[#087A4A] hover:text-[#0a192f] hover:shadow-lg transition-all duration-300 uppercase tracking-widest">
+                Enviar Mensaje <i class="fas fa-paper-plane ml-2"></i>
+            </button>
+            
+        </form>
+    </div>
+</div>
+
+</div>
+ </div>
                 
             </div>
         </section>
