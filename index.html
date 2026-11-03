@@ -554,13 +554,16 @@
 </body>
 </html>
 
-<script>
-  // Elimina forzosamente el widget de Netlify apenas intente aparecer
-  const observer = new MutationObserver(() => {
-    const netlifyWidget = document.querySelector('netlify-drawer, #netlify-drawer, [data-netlify-deploy-id], iframe[src*="netlify"]');
-    if (netlifyWidget) {
-      netlifyWidget.remove();
-    }
-  });
-  observer.observe(document.body, { childList: true, subtree: true });
-</script>
+<style>
+  /* Oculta forzosamente el botón flotante de Powered by Netlify */
+  a[href*="netlify.com"],
+  div:has(> a[href*="netlify.com"]),
+  aside:has(a[href*="netlify.com"]) {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+</style>
