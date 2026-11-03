@@ -553,17 +553,28 @@
     </script>
 </body>
 </html>
+<script>
+  // Busca y destruye el botón "Powered by Netlify" en cuanto carga la página
+  function quitarBotonNetlify() {
+    // 1. Elimina enlaces directos o contenedores fijos de Netlify
+    document.querySelectorAll('a[href*="netlify.com"], iframe[src*="netlify"]').forEach(el => {
+      const contenedor = el.closest('div, aside, footer') || el;
+      contenedor.remove();
+    });
 
-<style>
-  /* Oculta forzosamente el botón flotante de Powered by Netlify */
-  a[href*="netlify.com"],
-  div:has(> a[href*="netlify.com"]),
-  aside:has(a[href*="netlify.com"]) {
-    display: none !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
-    visibility: hidden !important;
-    width: 0 !important;
-    height: 0 !important;
+    // 2. Busca si Netlify lo ocultó dentro de un Shadow DOM o Web Component
+    document.querySelectorAll('body > *').forEach(el => {
+      if (el.tagName.includes('-') || el.shadowRoot || (el.innerText && el.innerText.includes('Powered by Netlify'))) {
+        if (!el.id.includes('contacto') && el.tagName !== 'MAIN' && el.tagName !== 'SECTION') {
+          el.style.setProperty('display', 'none', 'important');
+          el.remove();
+        }
+      }
+    });
   }
-</style>
+
+  // Se ejecuta al cargar y vigila si intenta aparecer después
+  window.addEventListener('DOMContentLoaded', quitarBotonNetlify);
+  window.addEventListener('load', quitarBotonNetlify);
+  new MutationObserver(quitarBotonNetlify).observe(document.body, { childList: true, subtree: true });
+</script>
